@@ -188,6 +188,9 @@ void img2map::Node::img2map_cbfn(const sensor_msgs::msg::Image::SharedPtr ros_ra
             enemy_pos.y = center_pos_vec[i].y / grid_height;
             robot.enemy.push_back(enemy_pos);
         }
+		// 获取敌人数量
+		int enemy_count = robot.enemy.size();
+		RCLCPP_INFO(get_logger(), "Number of enemies detected: %d", enemy_count);
 
         // 将robot发送到寻路模块
         RCLCPP_INFO(get_logger(), "robot has been send!");

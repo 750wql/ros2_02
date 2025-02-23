@@ -134,6 +134,11 @@ namespace navigation {
     public:
         explicit Node(const std::string& name);
     private:
+      	double number = 10.0; //初始子弹数量
+        // 发射冷却时间
+    	std::chrono::steady_clock::time_point last_shoot_time;
+    	const std::chrono::milliseconds SHOOT_COOLDOWN = std::chrono::milliseconds(300);  // 设置冷却时间，例如300ms
+
         void map_init_cbfn(const info_interfaces::msg::Map::SharedPtr map_info);
         void area_init_cbfn(const info_interfaces::msg::Area::SharedPtr area_info);
         void robot_navigation_cbfn(const info_interfaces::msg::Robot::SharedPtr robot_info);
