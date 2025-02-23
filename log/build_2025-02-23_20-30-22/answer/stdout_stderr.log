@@ -1,0 +1,27 @@
+[ 50%] Built target img2map_node
+[ 75%] [32mBuilding CXX object CMakeFiles/navigation_node.dir/src/navigation_node.cpp.o[0m
+[01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:[m[K In member function ‘[01m[Kvoid navigation::Node::robot_navigation_cbfn(info_interfaces::msg::Robot_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:85:37:[m[K [01;31m[Kerror: [m[K‘[01m[Karea[m[K’ was not declared in this scope; did you mean ‘[01m[Ktopic_name::area[m[K’?
+   85 |                 double green_in_x = [01;31m[Karea[m[K.green_in.x;
+      |                                     [01;31m[K^~~~[m[K
+      |                                     [32m[Ktopic_name::area[m[K
+In file included from [01m[K/home/wuqilin/ros2_ws/src/answer/include/answer/navigation_node.hpp:21[m[K,
+                 from [01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:4[m[K:
+[01m[K/home/wuqilin/ros2_ws/src/answer/include/answer/constant.hpp:10:17:[m[K [01;36m[Knote: [m[K‘[01m[Ktopic_name::area[m[K’ declared here
+   10 |     const char* [01;36m[Karea[m[K = "area";
+      |                 [01;36m[K^~~~[m[K
+[01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:94:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kpath_2[m[K’ was not declared in this scope; did you mean ‘[01m[Kpath[m[K’?
+   94 |             std::tie(pose.x, pose.y) = [01;31m[Kpath_2[m[K[1];
+      |                                        [01;31m[K^~~~~~[m[K
+      |                                        [32m[Kpath[m[K
+[01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:96:23:[m[K [01;31m[Kerror: [m[K‘[01m[Krobot_x[m[K’ was not declared in this scope; did you mean ‘[01m[Krobot_info[m[K’?
+   96 |             pose.x -= [01;31m[Krobot_x[m[K;
+      |                       [01;31m[K^~~~~~~[m[K
+      |                       [32m[Krobot_info[m[K
+[01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:97:23:[m[K [01;31m[Kerror: [m[K‘[01m[Krobot_y[m[K’ was not declared in this scope; did you mean ‘[01m[Krobot_info[m[K’?
+   97 |             pose.y -= [01;31m[Krobot_y[m[K;
+      |                       [01;31m[K^~~~~~~[m[K
+      |                       [32m[Krobot_info[m[K
+gmake[2]: *** [CMakeFiles/navigation_node.dir/build.make:76：CMakeFiles/navigation_node.dir/src/navigation_node.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:165：CMakeFiles/navigation_node.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

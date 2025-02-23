@@ -1,0 +1,13 @@
+[01m[K/home/wuqilin/ros2_ws/src/answer/src/img2map_node.cpp:4:10:[m[K [01;31m[Kfatal error: [m[Kimg2map_node.hpp: 没有那个文件或目录
+    4 | #include [01;31m[K"img2map_node.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:4:10:[m[K [01;31m[Kfatal error: [m[Knavigation_node.hpp: 没有那个文件或目录
+    4 | #include [01;31m[K"navigation_node.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+compilation terminated.
+gmake[2]: *** [CMakeFiles/ImageSubscriber.dir/build.make:76：CMakeFiles/ImageSubscriber.dir/src/img2map_node.cpp.o] 错误 1
+gmake[2]: *** 正在等待未完成的任务....
+gmake[2]: *** [CMakeFiles/ImageSubscriber.dir/build.make:90：CMakeFiles/ImageSubscriber.dir/src/navigation_node.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/ImageSubscriber.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

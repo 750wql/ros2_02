@@ -1,0 +1,322 @@
+[0.000000] (-) TimerEvent: {}
+[0.000321] (info_interfaces) JobQueued: {'identifier': 'info_interfaces', 'dependencies': OrderedDict()}
+[0.000396] (answer) JobQueued: {'identifier': 'answer', 'dependencies': OrderedDict([('info_interfaces', '/home/wuqilin/ros2_ws/install/info_interfaces')])}
+[0.000468] (info_interfaces) JobStarted: {'identifier': 'info_interfaces'}
+[0.004814] (info_interfaces) JobProgress: {'identifier': 'info_interfaces', 'progress': 'cmake'}
+[0.005060] (info_interfaces) JobProgress: {'identifier': 'info_interfaces', 'progress': 'build'}
+[0.005498] (info_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/wuqilin/ros2_ws/build/info_interfaces', '--', '-j32', '-l32'], 'cwd': '/home/wuqilin/ros2_ws/build/info_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', 'localhost,127.0.0.1,::1'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'wuqilin'), ('all_proxy', 'socks://127.0.0.1:7890/'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/wuqilin/ros2_ws/install/info_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/wuqilin'), ('OLDPWD', '/home/wuqilin/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2235'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('https_proxy', 'http://127.0.0.1:7890/'), ('COLCON_PREFIX_PATH', '/home/wuqilin/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'wuqilin'), ('ALL_PROXY', 'socks://127.0.0.1:7890/'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'wuqilin'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/anaconda3/bin:/home/anaconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/wuqilin/.dotnet/tools'), ('SESSION_MANAGER', 'local/wuqilin-ASUS-TUF-Gaming-F16-FX607JV-FX607JV:@/tmp/.ICE-unix/2212,unix/wuqilin-ASUS-TUF-Gaming-F16-FX607JV-FX607JV:/tmp/.ICE-unix/2212'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8d3135dc_f40b_453e_803a_2633f8d75546'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('DOTNET_BUNDLE_EXTRACT_BASE_DIR', '/home/wuqilin/.cache/dotnet_bundle_extract'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.197'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/wuqilin/ros2_ws/install/answer:/home/wuqilin/ros2_ws/install/info_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/wuqilin/ros2_ws/build/info_interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/wuqilin/ros2_ws/install/answer:/home/wuqilin/ros2_ws/install/info_interfaces:/opt/ros/humble')]), 'shell': False}
+[0.025131] (info_interfaces) StdoutLine: {'line': b'[  1%] Built target info_interfaces__cpp\n'}
+[0.026888] (info_interfaces) StdoutLine: {'line': b'[ 12%] Built target info_interfaces__rosidl_generator_c\n'}
+[0.029911] (info_interfaces) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_info_interfaces\n'}
+[0.037952] (info_interfaces) StdoutLine: {'line': b'[ 23%] Built target info_interfaces__rosidl_typesupport_cpp\n'}
+[0.038120] (info_interfaces) StdoutLine: {'line': b'[ 34%] Built target info_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[0.038640] (info_interfaces) StdoutLine: {'line': b'[ 45%] Built target info_interfaces__rosidl_typesupport_c\n'}
+[0.038757] (info_interfaces) StdoutLine: {'line': b'[ 56%] Built target info_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[0.039534] (info_interfaces) StdoutLine: {'line': b'[ 67%] Built target info_interfaces__rosidl_typesupport_introspection_c\n'}
+[0.040103] (info_interfaces) StdoutLine: {'line': b'[ 78%] Built target info_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[0.049825] (info_interfaces) StdoutLine: {'line': b'[ 78%] Built target info_interfaces\n'}
+[0.060013] (info_interfaces) StdoutLine: {'line': b'[ 80%] Built target info_interfaces__py\n'}
+[0.072180] (info_interfaces) StdoutLine: {'line': b'[ 89%] Built target info_interfaces__rosidl_generator_py\n'}
+[0.082275] (info_interfaces) StdoutLine: {'line': b'[ 92%] Built target info_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.082551] (info_interfaces) StdoutLine: {'line': b'[ 96%] Built target info_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[0.082622] (info_interfaces) StdoutLine: {'line': b'[100%] Built target info_interfaces__rosidl_typesupport_c__pyext\n'}
+[0.099961] (-) TimerEvent: {}
+[0.144793] (info_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[0.145054] (info_interfaces) StdoutLine: {'line': b'writing info_interfaces.egg-info/PKG-INFO\n'}
+[0.145206] (info_interfaces) StdoutLine: {'line': b'writing dependency_links to info_interfaces.egg-info/dependency_links.txt\n'}
+[0.145287] (info_interfaces) StdoutLine: {'line': b'writing top-level names to info_interfaces.egg-info/top_level.txt\n'}
+[0.146247] (info_interfaces) StdoutLine: {'line': b"reading manifest file 'info_interfaces.egg-info/SOURCES.txt'\n"}
+[0.146459] (info_interfaces) StdoutLine: {'line': b"writing manifest file 'info_interfaces.egg-info/SOURCES.txt'\n"}
+[0.158920] (info_interfaces) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_info_interfaces_egg\n'}
+[0.164202] (info_interfaces) CommandEnded: {'returncode': 0}
+[0.165237] (info_interfaces) JobProgress: {'identifier': 'info_interfaces', 'progress': 'install'}
+[0.168247] (info_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/wuqilin/ros2_ws/build/info_interfaces'], 'cwd': '/home/wuqilin/ros2_ws/build/info_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', 'localhost,127.0.0.1,::1'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'wuqilin'), ('all_proxy', 'socks://127.0.0.1:7890/'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/wuqilin/ros2_ws/install/info_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/wuqilin'), ('OLDPWD', '/home/wuqilin/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2235'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('https_proxy', 'http://127.0.0.1:7890/'), ('COLCON_PREFIX_PATH', '/home/wuqilin/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'wuqilin'), ('ALL_PROXY', 'socks://127.0.0.1:7890/'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'wuqilin'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/anaconda3/bin:/home/anaconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/wuqilin/.dotnet/tools'), ('SESSION_MANAGER', 'local/wuqilin-ASUS-TUF-Gaming-F16-FX607JV-FX607JV:@/tmp/.ICE-unix/2212,unix/wuqilin-ASUS-TUF-Gaming-F16-FX607JV-FX607JV:/tmp/.ICE-unix/2212'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8d3135dc_f40b_453e_803a_2633f8d75546'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('DOTNET_BUNDLE_EXTRACT_BASE_DIR', '/home/wuqilin/.cache/dotnet_bundle_extract'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.197'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/wuqilin/ros2_ws/install/answer:/home/wuqilin/ros2_ws/install/info_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/wuqilin/ros2_ws/build/info_interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/wuqilin/ros2_ws/install/answer:/home/wuqilin/ros2_ws/install/info_interfaces:/opt/ros/humble')]), 'shell': False}
+[0.170944] (info_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.171112] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/ament_index/resource_index/rosidl_interfaces/info_interfaces\n'}
+[0.171171] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces\n'}
+[0.171230] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg\n'}
+[0.171375] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail\n'}
+[0.171427] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/point__functions.h\n'}
+[0.171478] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/area__functions.c\n'}
+[0.171529] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/map__type_support.h\n'}
+[0.171578] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/robot__type_support.h\n'}
+[0.171634] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/map__functions.h\n'}
+[0.171683] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/robot__functions.h\n'}
+[0.171734] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/point__struct.h\n'}
+[0.171783] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/area__struct.h\n'}
+[0.171836] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/area__type_support.h\n'}
+[0.171886] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/map__struct.h\n'}
+[0.171935] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/robot__functions.c\n'}
+[0.171994] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/point__type_support.h\n'}
+[0.172044] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/robot__struct.h\n'}
+[0.172093] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/point__functions.c\n'}
+[0.172238] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/map__functions.c\n'}
+[0.172310] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/area__functions.h\n'}
+[0.172371] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/area.h\n'}
+[0.172421] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/robot.h\n'}
+[0.172470] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/point.h\n'}
+[0.172570] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.172618] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/map.h\n'}
+[0.172663] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/environment/library_path.sh\n'}
+[0.172710] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/environment/library_path.dsv\n'}
+[0.172756] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/lib/libinfo_interfaces__rosidl_generator_c.so\n'}
+[0.172802] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces\n'}
+[0.172847] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg\n'}
+[0.172893] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail\n'}
+[0.172939] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/point__rosidl_typesupport_fastrtps_c.h\n'}
+[0.172986] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/map__rosidl_typesupport_fastrtps_c.h\n'}
+[0.173032] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/robot__rosidl_typesupport_fastrtps_c.h\n'}
+[0.173079] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/area__rosidl_typesupport_fastrtps_c.h\n'}
+[0.173125] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.173172] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/lib/libinfo_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[0.173219] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces\n'}
+[0.173269] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg\n'}
+[0.173325] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail\n'}
+[0.173374] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/map__rosidl_typesupport_introspection_c.h\n'}
+[0.173424] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/point__type_support.c\n'}
+[0.173470] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/map__type_support.c\n'}
+[0.173516] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/area__type_support.c\n'}
+[0.173563] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/area__rosidl_typesupport_introspection_c.h\n'}
+[0.173613] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/point__rosidl_typesupport_introspection_c.h\n'}
+[0.173660] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/robot__type_support.c\n'}
+[0.173707] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/robot__rosidl_typesupport_introspection_c.h\n'}
+[0.173753] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.173800] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/lib/libinfo_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[0.173847] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/lib/libinfo_interfaces__rosidl_typesupport_c.so\n'}
+[0.173894] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces\n'}
+[0.173940] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg\n'}
+[0.173986] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail\n'}
+[0.174032] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/area__type_support.hpp\n'}
+[0.174087] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/robot__builder.hpp\n'}
+[0.174133] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/map__type_support.hpp\n'}
+[0.174180] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/point__builder.hpp\n'}
+[0.174226] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/robot__traits.hpp\n'}
+[0.174276] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/robot__type_support.hpp\n'}
+[0.174328] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/map__struct.hpp\n'}
+[0.174376] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/point__type_support.hpp\n'}
+[0.174431] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/map__builder.hpp\n'}
+[0.174478] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/map__traits.hpp\n'}
+[0.174524] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/robot__struct.hpp\n'}
+[0.174570] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/point__traits.hpp\n'}
+[0.174622] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/area__builder.hpp\n'}
+[0.174668] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/point__struct.hpp\n'}
+[0.174715] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/area__traits.hpp\n'}
+[0.174762] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/area__struct.hpp\n'}
+[0.174809] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/area.hpp\n'}
+[0.174858] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/map.hpp\n'}
+[0.174908] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[0.174957] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/robot.hpp\n'}
+[0.175007] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/point.hpp\n'}
+[0.175063] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces\n'}
+[0.175112] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg\n'}
+[0.175164] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.175216] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail\n'}
+[0.175280] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/dds_fastrtps\n'}
+[0.175548] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/area__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.175590] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/robot__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.175614] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/map__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.175636] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/point__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.175712] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/lib/libinfo_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.175735] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces\n'}
+[0.175758] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg\n'}
+[0.175778] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail\n'}
+[0.175797] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/map__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.175816] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/point__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.175835] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/robot__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.175854] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/robot__type_support.cpp\n'}
+[0.175874] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/map__type_support.cpp\n'}
+[0.175893] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/area__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.175913] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/point__type_support.cpp\n'}
+[0.175931] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/area__type_support.cpp\n'}
+[0.175950] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/lib/libinfo_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[0.175970] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/lib/libinfo_interfaces__rosidl_typesupport_cpp.so\n'}
+[0.175988] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/environment/pythonpath.sh\n'}
+[0.176008] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/environment/pythonpath.dsv\n'}
+[0.176027] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces-0.0.0-py3.10.egg-info\n'}
+[0.176047] (info_interfaces) StdoutLine: {'line': b'-- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[0.176067] (info_interfaces) StdoutLine: {'line': b'-- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[0.176087] (info_interfaces) StdoutLine: {'line': b'-- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[0.176107] (info_interfaces) StdoutLine: {'line': b'-- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[0.176126] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces\n'}
+[0.176146] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/__init__.py\n'}
+[0.176166] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/_info_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[0.176187] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/info_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.176210] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/_info_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[0.176232] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/_info_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[0.176253] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/info_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.176281] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/libinfo_interfaces__rosidl_generator_py.so\n'}
+[0.176302] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/msg\n'}
+[0.176322] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/msg/_map.py\n'}
+[0.176363] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/msg/__init__.py\n'}
+[0.176383] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/msg/_area.py\n'}
+[0.176403] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/msg/_map_s.c\n'}
+[0.176423] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/msg/_robot.py\n'}
+[0.176443] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/msg/_point.py\n'}
+[0.176463] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/msg/_robot_s.c\n'}
+[0.176484] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/msg/_point_s.c\n'}
+[0.176504] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/msg/_area_s.c\n'}
+[0.176524] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/info_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.199926] (info_interfaces) StdoutLine: {'line': b"Listing '/home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces'...\n"}
+[0.200028] (-) TimerEvent: {}
+[0.200101] (info_interfaces) StdoutLine: {'line': b"Listing '/home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/msg'...\n"}
+[0.202372] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/info_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.202452] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/info_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.202599] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/info_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.202653] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/lib/libinfo_interfaces__rosidl_generator_py.so\n'}
+[0.202790] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/msg/Area.idl\n'}
+[0.202839] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/msg/Map.idl\n'}
+[0.202987] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/msg/Point.idl\n'}
+[0.203027] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/msg/Robot.idl\n'}
+[0.203053] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/msg/Area.msg\n'}
+[0.203077] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/msg/Map.msg\n'}
+[0.203100] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/msg/Point.msg\n'}
+[0.203122] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/msg/Robot.msg\n'}
+[0.203143] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/ament_index/resource_index/package_run_dependencies/info_interfaces\n'}
+[0.203165] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/ament_index/resource_index/parent_prefix_path/info_interfaces\n'}
+[0.203185] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/environment/ament_prefix_path.sh\n'}
+[0.203207] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/environment/ament_prefix_path.dsv\n'}
+[0.203227] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/environment/path.sh\n'}
+[0.203263] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/environment/path.dsv\n'}
+[0.203452] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/local_setup.bash\n'}
+[0.203481] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/local_setup.sh\n'}
+[0.203503] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/local_setup.zsh\n'}
+[0.203523] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/local_setup.dsv\n'}
+[0.203542] (info_interfaces) StdoutLine: {'line': b'-- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/package.dsv\n'}
+[0.203560] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/ament_index/resource_index/packages/info_interfaces\n'}
+[0.203585] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/cmake/export_info_interfaces__rosidl_generator_cExport.cmake\n'}
+[0.203608] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/cmake/export_info_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.203626] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/cmake/export_info_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[0.203644] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/cmake/export_info_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[0.203663] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/cmake/info_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.203681] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/cmake/info_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.203699] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/cmake/info_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[0.203717] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/cmake/info_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.203735] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/cmake/export_info_interfaces__rosidl_generator_cppExport.cmake\n'}
+[0.203754] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/cmake/export_info_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[0.203772] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/cmake/export_info_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[0.203790] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/cmake/info_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.203810] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/cmake/info_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.203828] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/cmake/info_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[0.203846] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/cmake/info_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.203863] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/cmake/export_info_interfaces__rosidl_generator_pyExport.cmake\n'}
+[0.203881] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/cmake/export_info_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[0.203931] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[0.204033] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.204056] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.204079] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.204103] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.204123] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.204143] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.204163] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/cmake/info_interfacesConfig.cmake\n'}
+[0.204183] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/cmake/info_interfacesConfig-version.cmake\n'}
+[0.204203] (info_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/package.xml\n'}
+[0.204797] (info_interfaces) CommandEnded: {'returncode': 0}
+[0.216820] (info_interfaces) JobEnded: {'identifier': 'info_interfaces', 'rc': 0}
+[0.217563] (answer) JobStarted: {'identifier': 'answer'}
+[0.222855] (answer) JobProgress: {'identifier': 'answer', 'progress': 'cmake'}
+[0.223082] (answer) JobProgress: {'identifier': 'answer', 'progress': 'build'}
+[0.223183] (answer) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/wuqilin/ros2_ws/build/answer', '--', '-j32', '-l32'], 'cwd': '/home/wuqilin/ros2_ws/build/answer', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', 'localhost,127.0.0.1,::1'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'wuqilin'), ('all_proxy', 'socks://127.0.0.1:7890/'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/wuqilin/ros2_ws/install/info_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/wuqilin'), ('OLDPWD', '/home/wuqilin/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2235'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('https_proxy', 'http://127.0.0.1:7890/'), ('COLCON_PREFIX_PATH', '/home/wuqilin/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'wuqilin'), ('ALL_PROXY', 'socks://127.0.0.1:7890/'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'wuqilin'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/anaconda3/bin:/home/anaconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/wuqilin/.dotnet/tools'), ('SESSION_MANAGER', 'local/wuqilin-ASUS-TUF-Gaming-F16-FX607JV-FX607JV:@/tmp/.ICE-unix/2212,unix/wuqilin-ASUS-TUF-Gaming-F16-FX607JV-FX607JV:/tmp/.ICE-unix/2212'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8d3135dc_f40b_453e_803a_2633f8d75546'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('DOTNET_BUNDLE_EXTRACT_BASE_DIR', '/home/wuqilin/.cache/dotnet_bundle_extract'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.197'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/wuqilin/ros2_ws/install/answer:/home/wuqilin/ros2_ws/install/info_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/wuqilin/ros2_ws/build/answer'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/wuqilin/ros2_ws/install/info_interfaces:/home/wuqilin/ros2_ws/install/answer:/opt/ros/humble')]), 'shell': False}
+[0.258939] (answer) StdoutLine: {'line': b'[ 50%] Built target navigation_node\n'}
+[0.264048] (answer) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/img2map_node.dir/src/img2map_node.cpp.o\x1b[0m\n'}
+[0.300230] (-) TimerEvent: {}
+[0.400526] (-) TimerEvent: {}
+[0.500729] (-) TimerEvent: {}
+[0.601028] (-) TimerEvent: {}
+[0.701245] (-) TimerEvent: {}
+[0.801457] (-) TimerEvent: {}
+[0.901675] (-) TimerEvent: {}
+[1.001897] (-) TimerEvent: {}
+[1.102130] (-) TimerEvent: {}
+[1.202413] (-) TimerEvent: {}
+[1.302654] (-) TimerEvent: {}
+[1.402905] (-) TimerEvent: {}
+[1.503162] (-) TimerEvent: {}
+[1.603391] (-) TimerEvent: {}
+[1.703606] (-) TimerEvent: {}
+[1.803928] (-) TimerEvent: {}
+[1.904230] (-) TimerEvent: {}
+[2.004533] (-) TimerEvent: {}
+[2.104862] (-) TimerEvent: {}
+[2.205166] (-) TimerEvent: {}
+[2.305454] (-) TimerEvent: {}
+[2.405721] (-) TimerEvent: {}
+[2.506008] (-) TimerEvent: {}
+[2.606327] (-) TimerEvent: {}
+[2.706604] (-) TimerEvent: {}
+[2.807008] (-) TimerEvent: {}
+[2.907337] (-) TimerEvent: {}
+[3.007725] (-) TimerEvent: {}
+[3.107969] (-) TimerEvent: {}
+[3.208215] (-) TimerEvent: {}
+[3.308469] (-) TimerEvent: {}
+[3.408723] (-) TimerEvent: {}
+[3.508928] (-) TimerEvent: {}
+[3.609137] (-) TimerEvent: {}
+[3.709319] (-) TimerEvent: {}
+[3.809558] (-) TimerEvent: {}
+[3.909848] (-) TimerEvent: {}
+[4.010064] (-) TimerEvent: {}
+[4.110277] (-) TimerEvent: {}
+[4.210557] (-) TimerEvent: {}
+[4.310794] (-) TimerEvent: {}
+[4.411019] (-) TimerEvent: {}
+[4.511240] (-) TimerEvent: {}
+[4.611443] (-) TimerEvent: {}
+[4.711666] (-) TimerEvent: {}
+[4.811848] (-) TimerEvent: {}
+[4.912061] (-) TimerEvent: {}
+[5.012242] (-) TimerEvent: {}
+[5.112446] (-) TimerEvent: {}
+[5.212687] (-) TimerEvent: {}
+[5.312906] (-) TimerEvent: {}
+[5.413122] (-) TimerEvent: {}
+[5.513406] (-) TimerEvent: {}
+[5.613626] (-) TimerEvent: {}
+[5.713849] (-) TimerEvent: {}
+[5.791668] (answer) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable img2map_node\x1b[0m\n'}
+[5.813991] (-) TimerEvent: {}
+[5.911572] (answer) StderrLine: {'line': b'/usr/bin/ld: warning: libopencv_imgcodecs.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgcodecs.so.408\n'}
+[5.911861] (answer) StderrLine: {'line': b'/usr/bin/ld: warning: libopencv_imgproc.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.408\n'}
+[5.911932] (answer) StderrLine: {'line': b'/usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.408\n'}
+[5.914196] (-) TimerEvent: {}
+[6.014528] (-) TimerEvent: {}
+[6.114869] (-) TimerEvent: {}
+[6.135616] (answer) StdoutLine: {'line': b'[100%] Built target img2map_node\n'}
+[6.141294] (answer) CommandEnded: {'returncode': 0}
+[6.141620] (answer) JobProgress: {'identifier': 'answer', 'progress': 'install'}
+[6.141643] (answer) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/wuqilin/ros2_ws/build/answer'], 'cwd': '/home/wuqilin/ros2_ws/build/answer', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', 'localhost,127.0.0.1,::1'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'wuqilin'), ('all_proxy', 'socks://127.0.0.1:7890/'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/wuqilin/ros2_ws/install/info_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/wuqilin'), ('OLDPWD', '/home/wuqilin/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2235'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('https_proxy', 'http://127.0.0.1:7890/'), ('COLCON_PREFIX_PATH', '/home/wuqilin/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'wuqilin'), ('ALL_PROXY', 'socks://127.0.0.1:7890/'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'wuqilin'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/anaconda3/bin:/home/anaconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/wuqilin/.dotnet/tools'), ('SESSION_MANAGER', 'local/wuqilin-ASUS-TUF-Gaming-F16-FX607JV-FX607JV:@/tmp/.ICE-unix/2212,unix/wuqilin-ASUS-TUF-Gaming-F16-FX607JV-FX607JV:/tmp/.ICE-unix/2212'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8d3135dc_f40b_453e_803a_2633f8d75546'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('DOTNET_BUNDLE_EXTRACT_BASE_DIR', '/home/wuqilin/.cache/dotnet_bundle_extract'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.197'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/wuqilin/ros2_ws/install/answer:/home/wuqilin/ros2_ws/install/info_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/wuqilin/ros2_ws/build/answer'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/wuqilin/ros2_ws/install/info_interfaces:/home/wuqilin/ros2_ws/install/answer:/opt/ros/humble')]), 'shell': False}
+[6.142983] (answer) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.143079] (answer) StdoutLine: {'line': b'-- Installing: /home/wuqilin/ros2_ws/install/answer/lib/answer/img2map_node\n'}
+[6.145092] (answer) StdoutLine: {'line': b'-- Set runtime path of "/home/wuqilin/ros2_ws/install/answer/lib/answer/img2map_node" to ""\n'}
+[6.145190] (answer) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/lib/answer/navigation_node\n'}
+[6.145250] (answer) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/launch\n'}
+[6.145466] (answer) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/launch/answer.launch.py\n'}
+[6.145539] (answer) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/include\n'}
+[6.145592] (answer) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/include/answer\n'}
+[6.145642] (answer) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/include/answer/constant.hpp\n'}
+[6.145692] (answer) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/include/answer/my_serial.hpp\n'}
+[6.145740] (answer) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/include/answer/img2map_node.hpp\n'}
+[6.145790] (answer) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/include/answer/serial.hpp\n'}
+[6.145842] (answer) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/include/answer/navigation_node.hpp\n'}
+[6.145893] (answer) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/lib/answer/img2map_node\n'}
+[6.145944] (answer) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/lib/answer/navigation_node\n'}
+[6.145993] (answer) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/ament_index/resource_index/package_run_dependencies/answer\n'}
+[6.146046] (answer) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/ament_index/resource_index/parent_prefix_path/answer\n'}
+[6.146236] (answer) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/environment/ament_prefix_path.sh\n'}
+[6.146489] (answer) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/environment/ament_prefix_path.dsv\n'}
+[6.146519] (answer) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/environment/path.sh\n'}
+[6.146575] (answer) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/environment/path.dsv\n'}
+[6.146637] (answer) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/local_setup.bash\n'}
+[6.146659] (answer) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/local_setup.sh\n'}
+[6.146679] (answer) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/local_setup.zsh\n'}
+[6.146700] (answer) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/local_setup.dsv\n'}
+[6.146721] (answer) StdoutLine: {'line': b'-- Installing: /home/wuqilin/ros2_ws/install/answer/share/answer/package.dsv\n'}
+[6.146741] (answer) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/ament_index/resource_index/packages/answer\n'}
+[6.146763] (answer) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[6.146783] (answer) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[6.146839] (answer) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/cmake/answerConfig.cmake\n'}
+[6.146862] (answer) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/cmake/answerConfig-version.cmake\n'}
+[6.146883] (answer) StdoutLine: {'line': b'-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/package.xml\n'}
+[6.147026] (answer) CommandEnded: {'returncode': 0}
+[6.152524] (answer) JobEnded: {'identifier': 'answer', 'rc': 0}
+[6.152852] (-) EventReactorShutdown: {}

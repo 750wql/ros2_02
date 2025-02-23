@@ -1,0 +1,11 @@
+[0.006s] Invoking command in '/home/wuqilin/ros2_ws/build/answer': CMAKE_PREFIX_PATH=/home/wuqilin/ros2_ws/install/info_interfaces:/home/wuqilin/ros2_ws/install/answer:/opt/ros/humble /usr/bin/cmake --build /home/wuqilin/ros2_ws/build/answer -- -j32 -l32
+[0.046s] [ 50%] Built target img2map_node
+[0.052s] [ 75%] [32mBuilding CXX object CMakeFiles/navigation_node.dir/src/navigation_node.cpp.o[0m
+[1.127s] In file included from [01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:4[m[K:
+[1.127s] [01m[K/home/wuqilin/ros2_ws/src/answer/include/answer/navigation_node.hpp:146:17:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kif[m[K’
+[1.127s]   146 |                 [01;31m[Kif[m[K (0 == m_last_x && 0 == m_last_y)
+[1.127s]       |                 [01;31m[K^~[m[K
+[4.162s] gmake[2]: *** [CMakeFiles/navigation_node.dir/build.make:76：CMakeFiles/navigation_node.dir/src/navigation_node.cpp.o] 错误 1
+[4.162s] gmake[1]: *** [CMakeFiles/Makefile2:165：CMakeFiles/navigation_node.dir/all] 错误 2
+[4.162s] gmake: *** [Makefile:146：all] 错误 2
+[4.164s] Invoked command in '/home/wuqilin/ros2_ws/build/answer' returned '2': CMAKE_PREFIX_PATH=/home/wuqilin/ros2_ws/install/info_interfaces:/home/wuqilin/ros2_ws/install/answer:/opt/ros/humble /usr/bin/cmake --build /home/wuqilin/ros2_ws/build/answer -- -j32 -l32

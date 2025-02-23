@@ -1,0 +1,8 @@
+msg/Area.idl
+msg/Area.msg
+msg/Map.idl
+msg/Map.msg
+msg/Point.idl
+msg/Point.msg
+msg/Robot.idl
+msg/Robot.msg

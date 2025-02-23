@@ -1,0 +1,4 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/navigation_node.dir/src/navigation_node.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/img2map_node.dir/src/img2map_node.cpp.o[0m
+[ 75%] [32m[1mLinking CXX executable img2map_node[0m
+[ 75%] Built target img2map_node

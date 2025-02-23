@@ -1,0 +1,9 @@
+[01m[K/home/wuqilin/ros2_ws/src/answer/src/img2map_node.cpp:[m[K In member function ‘[01m[Kvoid img2map::Node::img2map_cbfn(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/wuqilin/ros2_ws/src/answer/src/img2map_node.cpp:37:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv_ptr[m[K’ was not declared in this scope; did you mean ‘[01m[Ksi_ptr[m[K’?
+   37 |         cv::Mat roi_image = [01;31m[Kcv_ptr[m[K->image(roi);
+      |                             [01;31m[K^~~~~~[m[K
+      |                             [32m[Ksi_ptr[m[K
+gmake[2]: *** [CMakeFiles/img2map_node.dir/build.make:76：CMakeFiles/img2map_node.dir/src/img2map_node.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:139：CMakeFiles/img2map_node.dir/all] 错误 2
+gmake[1]: *** 正在等待未完成的任务....
+gmake: *** [Makefile:146：all] 错误 2

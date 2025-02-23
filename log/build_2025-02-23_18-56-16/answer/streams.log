@@ -1,0 +1,40 @@
+[0.006s] Invoking command in '/home/wuqilin/ros2_ws/build/answer': CMAKE_PREFIX_PATH=/home/wuqilin/ros2_ws/install/info_interfaces:/home/wuqilin/ros2_ws/install/answer:/opt/ros/humble /usr/bin/cmake --build /home/wuqilin/ros2_ws/build/answer -- -j32 -l32
+[0.049s] [ 50%] Built target img2map_node
+[0.058s] [ 75%] [32mBuilding CXX object CMakeFiles/navigation_node.dir/src/navigation_node.cpp.o[0m
+[10.035s] [100%] [32m[1mLinking CXX executable navigation_node[0m
+[10.552s] [100%] Built target navigation_node
+[10.557s] Invoked command in '/home/wuqilin/ros2_ws/build/answer' returned '0': CMAKE_PREFIX_PATH=/home/wuqilin/ros2_ws/install/info_interfaces:/home/wuqilin/ros2_ws/install/answer:/opt/ros/humble /usr/bin/cmake --build /home/wuqilin/ros2_ws/build/answer -- -j32 -l32
+[10.557s] Invoking command in '/home/wuqilin/ros2_ws/build/answer': CMAKE_PREFIX_PATH=/home/wuqilin/ros2_ws/install/info_interfaces:/home/wuqilin/ros2_ws/install/answer:/opt/ros/humble /usr/bin/cmake --install /home/wuqilin/ros2_ws/build/answer
+[10.559s] -- Install configuration: ""
+[10.559s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/lib/answer/img2map_node
+[10.559s] -- Installing: /home/wuqilin/ros2_ws/install/answer/lib/answer/navigation_node
+[10.566s] -- Set runtime path of "/home/wuqilin/ros2_ws/install/answer/lib/answer/navigation_node" to ""
+[10.566s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/launch
+[10.566s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/launch/answer.launch.py
+[10.566s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/include
+[10.566s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/include/answer
+[10.566s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/include/answer/constant.hpp
+[10.566s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/include/answer/my_serial.hpp
+[10.566s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/include/answer/img2map_node.hpp
+[10.566s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/include/answer/serial.hpp
+[10.566s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/include/answer/navigation_node.hpp
+[10.566s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/lib/answer/img2map_node
+[10.566s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/lib/answer/navigation_node
+[10.566s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/ament_index/resource_index/package_run_dependencies/answer
+[10.566s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/ament_index/resource_index/parent_prefix_path/answer
+[10.566s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/environment/ament_prefix_path.sh
+[10.566s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/environment/ament_prefix_path.dsv
+[10.566s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/environment/path.sh
+[10.566s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/environment/path.dsv
+[10.566s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/local_setup.bash
+[10.566s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/local_setup.sh
+[10.566s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/local_setup.zsh
+[10.566s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/local_setup.dsv
+[10.566s] -- Installing: /home/wuqilin/ros2_ws/install/answer/share/answer/package.dsv
+[10.566s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/ament_index/resource_index/packages/answer
+[10.566s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/cmake/ament_cmake_export_dependencies-extras.cmake
+[10.566s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/cmake/ament_cmake_export_include_directories-extras.cmake
+[10.566s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/cmake/answerConfig.cmake
+[10.566s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/cmake/answerConfig-version.cmake
+[10.567s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/package.xml
+[10.567s] Invoked command in '/home/wuqilin/ros2_ws/build/answer' returned '0': CMAKE_PREFIX_PATH=/home/wuqilin/ros2_ws/install/info_interfaces:/home/wuqilin/ros2_ws/install/answer:/opt/ros/humble /usr/bin/cmake --install /home/wuqilin/ros2_ws/build/answer

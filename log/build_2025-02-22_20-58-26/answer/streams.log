@@ -1,0 +1,26 @@
+[0.010s] Invoking command in '/home/wuqilin/ros2_ws/build/answer': CMAKE_PREFIX_PATH=/home/wuqilin/ros2_ws/install/info_interfaces:/home/wuqilin/ros2_ws/install/answer:/opt/ros/humble /usr/bin/cmake --build /home/wuqilin/ros2_ws/build/answer -- -j32 -l32
+[0.054s] [ 25%] [32mBuilding CXX object CMakeFiles/img2map_node.dir/src/img2map_node.cpp.o[0m
+[0.060s] [ 50%] [32mBuilding CXX object CMakeFiles/navigation_node.dir/src/navigation_node.cpp.o[0m
+[1.217s] [01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:[m[K In member function ‘[01m[Kvoid navigation::Node::robot_navigation_cbfn(info_interfaces::msg::Robot_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.217s] [01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:120:13:[m[K [01;31m[Kerror: [m[K‘[01m[Karea_info[m[K’ was not declared in this scope
+[1.217s]   120 |             [01;31m[Karea_info[m[K->area.cover.x,
+[1.217s]       |             [01;31m[K^~~~~~~~~[m[K
+[1.220s] [01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:153:37:[m[K [01;31m[Kerror: [m[K‘[01m[Karea[m[K’ was not declared in this scope; did you mean ‘[01m[Ktopic_name::area[m[K’?
+[1.220s]   153 |             pose.theta = std::atan2([01;31m[Karea[m[K.recover.y - robot_y, area.recover.x - robot_x);
+[1.220s]       |                                     [01;31m[K^~~~[m[K
+[1.220s]       |                                     [32m[Ktopic_name::area[m[K
+[1.220s] In file included from [01m[K/home/wuqilin/ros2_ws/src/answer/include/answer/navigation_node.hpp:21[m[K,
+[1.220s]                  from [01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:4[m[K:
+[1.220s] [01m[K/home/wuqilin/ros2_ws/src/answer/include/answer/constant.hpp:10:17:[m[K [01;36m[Knote: [m[K‘[01m[Ktopic_name::area[m[K’ declared here
+[1.220s]    10 |     const char* [01;36m[Karea[m[K = "area";
+[1.220s]       |                 [01;36m[K^~~~[m[K
+[4.120s] gmake[2]: *** [CMakeFiles/navigation_node.dir/build.make:76：CMakeFiles/navigation_node.dir/src/navigation_node.cpp.o] 错误 1
+[4.121s] gmake[1]: *** [CMakeFiles/Makefile2:165：CMakeFiles/navigation_node.dir/all] 错误 2
+[4.121s] gmake[1]: *** 正在等待未完成的任务....
+[5.465s] [ 75%] [32m[1mLinking CXX executable img2map_node[0m
+[5.595s] /usr/bin/ld: warning: libopencv_imgcodecs.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgcodecs.so.408
+[5.596s] /usr/bin/ld: warning: libopencv_imgproc.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.408
+[5.596s] /usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.408
+[5.820s] [ 75%] Built target img2map_node
+[5.821s] gmake: *** [Makefile:146：all] 错误 2
+[5.822s] Invoked command in '/home/wuqilin/ros2_ws/build/answer' returned '2': CMAKE_PREFIX_PATH=/home/wuqilin/ros2_ws/install/info_interfaces:/home/wuqilin/ros2_ws/install/answer:/opt/ros/humble /usr/bin/cmake --build /home/wuqilin/ros2_ws/build/answer -- -j32 -l32

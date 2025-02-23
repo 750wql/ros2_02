@@ -1,0 +1,26 @@
+[0.005s] Invoking command in '/home/wuqilin/ros2_ws/build/answer': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/wuqilin/ros2_ws/build/answer -- -j32 -l32
+[0.032s] [ 50%] [32mBuilding CXX object CMakeFiles/ImageSubscriber.dir/src/ImageSubscriber.cpp.o[0m
+[4.748s] [100%] [32m[1mLinking CXX executable ImageSubscriber[0m
+[4.847s] /usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.408
+[5.083s] [100%] Built target ImageSubscriber
+[5.087s] Invoked command in '/home/wuqilin/ros2_ws/build/answer' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/wuqilin/ros2_ws/build/answer -- -j32 -l32
+[5.090s] Invoking command in '/home/wuqilin/ros2_ws/build/answer': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/wuqilin/ros2_ws/build/answer
+[5.093s] -- Install configuration: ""
+[5.093s] -- Installing: /home/wuqilin/ros2_ws/install/answer/lib/answer/ImageSubscriber
+[5.095s] -- Set runtime path of "/home/wuqilin/ros2_ws/install/answer/lib/answer/ImageSubscriber" to ""
+[5.095s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/ament_index/resource_index/package_run_dependencies/answer
+[5.095s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/ament_index/resource_index/parent_prefix_path/answer
+[5.095s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/environment/ament_prefix_path.sh
+[5.095s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/environment/ament_prefix_path.dsv
+[5.095s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/environment/path.sh
+[5.096s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/environment/path.dsv
+[5.096s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/local_setup.bash
+[5.096s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/local_setup.sh
+[5.096s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/local_setup.zsh
+[5.096s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/local_setup.dsv
+[5.096s] -- Installing: /home/wuqilin/ros2_ws/install/answer/share/answer/package.dsv
+[5.096s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/ament_index/resource_index/packages/answer
+[5.096s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/cmake/answerConfig.cmake
+[5.096s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/cmake/answerConfig-version.cmake
+[5.096s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/package.xml
+[5.097s] Invoked command in '/home/wuqilin/ros2_ws/build/answer' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/wuqilin/ros2_ws/build/answer

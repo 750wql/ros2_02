@@ -1,0 +1,9 @@
+{
+  "package_name": "info_interfaces",
+  "non_idl_tuples": [
+    "/home/wuqilin/ros2_ws/src/info_interfaces:src/msg/Area.msg",
+    "/home/wuqilin/ros2_ws/src/info_interfaces:src/msg/Map.msg",
+    "/home/wuqilin/ros2_ws/src/info_interfaces:src/msg/Point.msg",
+    "/home/wuqilin/ros2_ws/src/info_interfaces:src/msg/Robot.msg"
+  ]
+}

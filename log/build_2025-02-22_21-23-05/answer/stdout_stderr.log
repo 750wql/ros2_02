@@ -1,0 +1,21 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/img2map_node.dir/src/img2map_node.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/navigation_node.dir/src/navigation_node.cpp.o[0m
+[01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:[m[K In member function ‘[01m[Kvoid navigation::Node::robot_navigation_cbfn(info_interfaces::msg::Robot_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:119:13:[m[K [01;31m[Kerror: [m[K‘[01m[Karea_info[m[K’ was not declared in this scope
+  119 |             [01;31m[Karea_info[m[K->recover.x,
+      |             [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:152:54:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Krecover[m[K’ in ‘[01m[Ktopic_name::area[m[K’, which is of non-class type ‘[01m[Kconst char*[m[K’
+  152 |             pose.theta = std::atan2(topic_name::area.[01;31m[Krecover[m[K.y - robot_y, topic_name::area.recover.x - robot_x);
+      |                                                      [01;31m[K^~~~~~~[m[K
+[01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:152:92:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Krecover[m[K’ in ‘[01m[Ktopic_name::area[m[K’, which is of non-class type ‘[01m[Kconst char*[m[K’
+  152 |             pose.theta = std::atan2(topic_name::area.recover.y - robot_y, topic_name::area.[01;31m[Krecover[m[K.x - robot_x);
+      |                                                                                            [01;31m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/navigation_node.dir/build.make:76：CMakeFiles/navigation_node.dir/src/navigation_node.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:165：CMakeFiles/navigation_node.dir/all] 错误 2
+gmake[1]: *** 正在等待未完成的任务....
+[ 75%] [32m[1mLinking CXX executable img2map_node[0m
+/usr/bin/ld: warning: libopencv_imgcodecs.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgcodecs.so.408
+/usr/bin/ld: warning: libopencv_imgproc.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.408
+/usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.408
+[ 75%] Built target img2map_node
+gmake: *** [Makefile:146：all] 错误 2

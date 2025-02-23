@@ -1,0 +1,6 @@
+Invoking command in '/home/wuqilin/ros2_ws/build/info_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/wuqilin/ros2_ws/src/info_interfaces -DCMAKE_INSTALL_PREFIX=/home/wuqilin/ros2_ws/install/info_interfaces
+Invoked command in '/home/wuqilin/ros2_ws/build/info_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/wuqilin/ros2_ws/src/info_interfaces -DCMAKE_INSTALL_PREFIX=/home/wuqilin/ros2_ws/install/info_interfaces
+Invoking command in '/home/wuqilin/ros2_ws/build/info_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/wuqilin/ros2_ws/build/info_interfaces -- -j32 -l32
+Invoked command in '/home/wuqilin/ros2_ws/build/info_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/wuqilin/ros2_ws/build/info_interfaces -- -j32 -l32
+Invoking command in '/home/wuqilin/ros2_ws/build/info_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/wuqilin/ros2_ws/build/info_interfaces
+Invoked command in '/home/wuqilin/ros2_ws/build/info_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/wuqilin/ros2_ws/build/info_interfaces

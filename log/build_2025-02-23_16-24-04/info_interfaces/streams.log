@@ -1,0 +1,294 @@
+[0.006s] Invoking command in '/home/wuqilin/ros2_ws/build/info_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/wuqilin/ros2_ws/build/info_interfaces -- -j32 -l32
+[0.022s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.116s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.120s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.126s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.173s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.289s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.346s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.458s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.479s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.495s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.495s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[0.496s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[0.505s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.525s] -- Added test 'lint_cmake' to check CMake code style
+[0.528s] -- Added test 'xmllint' to check XML markup files
+[0.532s] -- Configuring done
+[0.561s] -- Generating done
+[0.566s] -- Build files have been written to: /home/wuqilin/ros2_ws/build/info_interfaces
+[0.577s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[0.581s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[0.586s] [  3%] Built target ament_cmake_python_copy_info_interfaces
+[0.693s] running egg_info
+[0.693s] writing info_interfaces.egg-info/PKG-INFO
+[0.693s] writing dependency_links to info_interfaces.egg-info/dependency_links.txt
+[0.693s] writing top-level names to info_interfaces.egg-info/top_level.txt
+[0.694s] reading manifest file 'info_interfaces.egg-info/SOURCES.txt'
+[0.694s] writing manifest file 'info_interfaces.egg-info/SOURCES.txt'
+[0.706s] [  3%] Built target ament_cmake_python_build_info_interfaces_egg
+[0.767s] [  3%] Built target info_interfaces__cpp
+[0.770s] [  5%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[0.770s] [  7%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[0.771s] [  9%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[0.778s] [ 10%] [32mBuilding C object CMakeFiles/info_interfaces__rosidl_generator_c.dir/rosidl_generator_c/info_interfaces/msg/detail/area__functions.c.o[0m
+[0.778s] [ 12%] [32mBuilding C object CMakeFiles/info_interfaces__rosidl_generator_c.dir/rosidl_generator_c/info_interfaces/msg/detail/map__functions.c.o[0m
+[0.778s] [ 14%] [32mBuilding C object CMakeFiles/info_interfaces__rosidl_generator_c.dir/rosidl_generator_c/info_interfaces/msg/detail/point__functions.c.o[0m
+[0.778s] [ 16%] [32mBuilding C object CMakeFiles/info_interfaces__rosidl_generator_c.dir/rosidl_generator_c/info_interfaces/msg/detail/robot__functions.c.o[0m
+[0.845s] [ 18%] [32m[1mLinking C shared library libinfo_interfaces__rosidl_generator_c.so[0m
+[0.863s] [ 18%] Built target info_interfaces__rosidl_generator_c
+[0.867s] [ 20%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[0.867s] [ 23%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[0.867s] [ 23%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[0.925s] [ 25%] [32mBuilding CXX object CMakeFiles/info_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/info_interfaces/msg/area__type_support.cpp.o[0m
+[0.925s] [ 27%] [32mBuilding CXX object CMakeFiles/info_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/info_interfaces/msg/map__type_support.cpp.o[0m
+[0.926s] [ 29%] [32mBuilding CXX object CMakeFiles/info_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/info_interfaces/msg/point__type_support.cpp.o[0m
+[0.926s] [ 30%] [32mBuilding CXX object CMakeFiles/info_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/info_interfaces/msg/robot__type_support.cpp.o[0m
+[0.937s] [ 34%] [32mBuilding CXX object CMakeFiles/info_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/info_interfaces/msg/detail/point__type_support.cpp.o[0m
+[0.937s] [ 36%] [32mBuilding CXX object CMakeFiles/info_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/info_interfaces/msg/detail/area__type_support.cpp.o[0m
+[0.938s] [ 36%] [32mBuilding CXX object CMakeFiles/info_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/info_interfaces/msg/detail/map__type_support.cpp.o[0m
+[0.938s] [ 38%] [32mBuilding CXX object CMakeFiles/info_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/info_interfaces/msg/detail/robot__type_support.cpp.o[0m
+[0.954s] [ 40%] [32mBuilding CXX object CMakeFiles/info_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/info_interfaces/msg/detail/dds_fastrtps/area__type_support.cpp.o[0m
+[0.954s] [ 41%] [32mBuilding CXX object CMakeFiles/info_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/info_interfaces/msg/detail/dds_fastrtps/map__type_support.cpp.o[0m
+[0.954s] [ 43%] [32mBuilding CXX object CMakeFiles/info_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/info_interfaces/msg/detail/dds_fastrtps/point__type_support.cpp.o[0m
+[0.954s] [ 45%] [32mBuilding CXX object CMakeFiles/info_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/info_interfaces/msg/detail/dds_fastrtps/robot__type_support.cpp.o[0m
+[1.020s] [ 47%] [32mBuilding CXX object CMakeFiles/info_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/info_interfaces/msg/area__type_support.cpp.o[0m
+[1.020s] [ 50%] [32mBuilding CXX object CMakeFiles/info_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/info_interfaces/msg/point__type_support.cpp.o[0m
+[1.020s] [ 50%] [32mBuilding CXX object CMakeFiles/info_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/info_interfaces/msg/map__type_support.cpp.o[0m
+[1.020s] [ 52%] [32mBuilding CXX object CMakeFiles/info_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/info_interfaces/msg/robot__type_support.cpp.o[0m
+[1.046s] [ 54%] [32m[1mLinking CXX shared library libinfo_interfaces__rosidl_typesupport_c.so[0m
+[1.071s] [ 54%] Built target info_interfaces__rosidl_typesupport_c
+[1.074s] [ 56%] [32mBuilding CXX object CMakeFiles/info_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/info_interfaces/msg/detail/robot__type_support_c.cpp.o[0m
+[1.074s] [ 58%] [32mBuilding CXX object CMakeFiles/info_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/info_interfaces/msg/detail/area__type_support_c.cpp.o[0m
+[1.074s] [ 61%] [32mBuilding CXX object CMakeFiles/info_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/info_interfaces/msg/detail/map__type_support_c.cpp.o[0m
+[1.074s] [ 60%] [32mBuilding CXX object CMakeFiles/info_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/info_interfaces/msg/detail/point__type_support_c.cpp.o[0m
+[1.110s] [ 63%] [32mBuilding C object CMakeFiles/info_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/info_interfaces/msg/detail/point__type_support.c.o[0m
+[1.111s] [ 65%] [32mBuilding C object CMakeFiles/info_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/info_interfaces/msg/detail/area__type_support.c.o[0m
+[1.111s] [ 69%] [32mBuilding C object CMakeFiles/info_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/info_interfaces/msg/detail/robot__type_support.c.o[0m
+[1.111s] [ 69%] [32mBuilding C object CMakeFiles/info_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/info_interfaces/msg/detail/map__type_support.c.o[0m
+[1.142s] [ 70%] [32m[1mLinking C shared library libinfo_interfaces__rosidl_typesupport_introspection_c.so[0m
+[1.161s] [ 70%] Built target info_interfaces__rosidl_typesupport_introspection_c
+[1.217s] [ 72%] [32m[1mLinking CXX shared library libinfo_interfaces__rosidl_typesupport_cpp.so[0m
+[1.241s] [ 72%] Built target info_interfaces__rosidl_typesupport_cpp
+[1.276s] [ 74%] [32m[1mLinking CXX shared library libinfo_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[1.312s] [ 76%] [32m[1mLinking CXX shared library libinfo_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[1.314s] [ 76%] Built target info_interfaces__rosidl_typesupport_introspection_cpp
+[1.347s] [ 78%] [32m[1mLinking CXX shared library libinfo_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[1.347s] [ 78%] Built target info_interfaces__rosidl_typesupport_fastrtps_c
+[1.388s] [ 78%] Built target info_interfaces__rosidl_typesupport_fastrtps_cpp
+[1.396s] [ 78%] Built target info_interfaces
+[1.410s] [ 80%] [34m[1mGenerating Python code for ROS interfaces[0m
+[1.663s] [ 80%] Built target info_interfaces__py
+[1.674s] [ 81%] [32mBuilding C object CMakeFiles/info_interfaces__rosidl_generator_py.dir/rosidl_generator_py/info_interfaces/msg/_area_s.c.o[0m
+[1.675s] [ 83%] [32mBuilding C object CMakeFiles/info_interfaces__rosidl_generator_py.dir/rosidl_generator_py/info_interfaces/msg/_map_s.c.o[0m
+[1.675s] [ 85%] [32mBuilding C object CMakeFiles/info_interfaces__rosidl_generator_py.dir/rosidl_generator_py/info_interfaces/msg/_point_s.c.o[0m
+[1.676s] [ 87%] [32mBuilding C object CMakeFiles/info_interfaces__rosidl_generator_py.dir/rosidl_generator_py/info_interfaces/msg/_robot_s.c.o[0m
+[1.753s] [ 89%] [32m[1mLinking C shared library rosidl_generator_py/info_interfaces/libinfo_interfaces__rosidl_generator_py.so[0m
+[1.775s] [ 89%] Built target info_interfaces__rosidl_generator_py
+[1.793s] [ 90%] [32mBuilding C object CMakeFiles/info_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/info_interfaces/_info_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[1.794s] [ 92%] [32mBuilding C object CMakeFiles/info_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/info_interfaces/_info_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[1.794s] [ 94%] [32mBuilding C object CMakeFiles/info_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/info_interfaces/_info_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[1.854s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/info_interfaces/info_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[1.854s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/info_interfaces/info_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[1.855s] [100%] [32m[1mLinking C shared library rosidl_generator_py/info_interfaces/info_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[1.869s] [100%] Built target info_interfaces__rosidl_typesupport_introspection_c__pyext
+[1.869s] [100%] Built target info_interfaces__rosidl_typesupport_c__pyext
+[1.874s] [100%] Built target info_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[1.881s] Invoked command in '/home/wuqilin/ros2_ws/build/info_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/wuqilin/ros2_ws/build/info_interfaces -- -j32 -l32
+[1.888s] Invoking command in '/home/wuqilin/ros2_ws/build/info_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/wuqilin/ros2_ws/build/info_interfaces
+[1.895s] -- Install configuration: ""
+[1.895s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/ament_index/resource_index/rosidl_interfaces/info_interfaces
+[1.895s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces
+[1.895s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg
+[1.895s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail
+[1.895s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/point__functions.h
+[1.895s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/area__functions.c
+[1.896s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/map__type_support.h
+[1.896s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/robot__type_support.h
+[1.896s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/map__functions.h
+[1.896s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/robot__functions.h
+[1.896s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/point__struct.h
+[1.896s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/area__struct.h
+[1.896s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/area__type_support.h
+[1.896s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/map__struct.h
+[1.896s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/robot__functions.c
+[1.896s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/point__type_support.h
+[1.896s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/robot__struct.h
+[1.896s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/point__functions.c
+[1.896s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/map__functions.c
+[1.896s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/area__functions.h
+[1.897s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/area.h
+[1.897s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/robot.h
+[1.897s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/point.h
+[1.897s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/rosidl_generator_c__visibility_control.h
+[1.897s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/map.h
+[1.897s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/environment/library_path.sh
+[1.897s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/environment/library_path.dsv
+[1.897s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/lib/libinfo_interfaces__rosidl_generator_c.so
+[1.897s] -- Set runtime path of "/home/wuqilin/ros2_ws/install/info_interfaces/lib/libinfo_interfaces__rosidl_generator_c.so" to ""
+[1.897s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces
+[1.897s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg
+[1.897s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail
+[1.897s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/point__rosidl_typesupport_fastrtps_c.h
+[1.897s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/map__rosidl_typesupport_fastrtps_c.h
+[1.897s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/robot__rosidl_typesupport_fastrtps_c.h
+[1.898s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/area__rosidl_typesupport_fastrtps_c.h
+[1.898s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.898s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/lib/libinfo_interfaces__rosidl_typesupport_fastrtps_c.so
+[1.898s] -- Set runtime path of "/home/wuqilin/ros2_ws/install/info_interfaces/lib/libinfo_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[1.898s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces
+[1.898s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg
+[1.898s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail
+[1.898s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/map__rosidl_typesupport_introspection_c.h
+[1.898s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/point__type_support.c
+[1.898s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/map__type_support.c
+[1.898s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/area__type_support.c
+[1.898s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/area__rosidl_typesupport_introspection_c.h
+[1.898s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/point__rosidl_typesupport_introspection_c.h
+[1.898s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/robot__type_support.c
+[1.899s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/robot__rosidl_typesupport_introspection_c.h
+[1.899s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.899s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/lib/libinfo_interfaces__rosidl_typesupport_introspection_c.so
+[1.899s] -- Set runtime path of "/home/wuqilin/ros2_ws/install/info_interfaces/lib/libinfo_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[1.899s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/lib/libinfo_interfaces__rosidl_typesupport_c.so
+[1.899s] -- Set runtime path of "/home/wuqilin/ros2_ws/install/info_interfaces/lib/libinfo_interfaces__rosidl_typesupport_c.so" to ""
+[1.899s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces
+[1.899s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg
+[1.899s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail
+[1.899s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/area__type_support.hpp
+[1.899s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/robot__builder.hpp
+[1.899s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/map__type_support.hpp
+[1.899s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/point__builder.hpp
+[1.900s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/robot__traits.hpp
+[1.900s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/robot__type_support.hpp
+[1.900s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/map__struct.hpp
+[1.900s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/point__type_support.hpp
+[1.900s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/map__builder.hpp
+[1.900s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/map__traits.hpp
+[1.900s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/robot__struct.hpp
+[1.900s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/point__traits.hpp
+[1.900s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/area__builder.hpp
+[1.900s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/point__struct.hpp
+[1.900s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/area__traits.hpp
+[1.900s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/area__struct.hpp
+[1.900s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/area.hpp
+[1.900s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/map.hpp
+[1.900s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[1.900s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/robot.hpp
+[1.900s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/point.hpp
+[1.901s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces
+[1.901s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg
+[1.901s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.901s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail
+[1.901s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/dds_fastrtps
+[1.901s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/area__rosidl_typesupport_fastrtps_cpp.hpp
+[1.901s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/robot__rosidl_typesupport_fastrtps_cpp.hpp
+[1.901s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/map__rosidl_typesupport_fastrtps_cpp.hpp
+[1.901s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/point__rosidl_typesupport_fastrtps_cpp.hpp
+[1.901s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/lib/libinfo_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[1.901s] -- Set runtime path of "/home/wuqilin/ros2_ws/install/info_interfaces/lib/libinfo_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[1.901s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces
+[1.901s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg
+[1.901s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail
+[1.901s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/map__rosidl_typesupport_introspection_cpp.hpp
+[1.901s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/point__rosidl_typesupport_introspection_cpp.hpp
+[1.901s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/robot__rosidl_typesupport_introspection_cpp.hpp
+[1.901s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/robot__type_support.cpp
+[1.902s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/map__type_support.cpp
+[1.902s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/area__rosidl_typesupport_introspection_cpp.hpp
+[1.902s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/point__type_support.cpp
+[1.902s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/include/info_interfaces/info_interfaces/msg/detail/area__type_support.cpp
+[1.902s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/lib/libinfo_interfaces__rosidl_typesupport_introspection_cpp.so
+[1.902s] -- Set runtime path of "/home/wuqilin/ros2_ws/install/info_interfaces/lib/libinfo_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[1.902s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/lib/libinfo_interfaces__rosidl_typesupport_cpp.so
+[1.902s] -- Set runtime path of "/home/wuqilin/ros2_ws/install/info_interfaces/lib/libinfo_interfaces__rosidl_typesupport_cpp.so" to ""
+[1.902s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/environment/pythonpath.sh
+[1.902s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/environment/pythonpath.dsv
+[1.902s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces-0.0.0-py3.10.egg-info
+[1.902s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[1.902s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[1.903s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[1.903s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[1.903s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces
+[1.903s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/__init__.py
+[1.903s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/_info_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[1.903s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/info_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.903s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/_info_interfaces_s.ep.rosidl_typesupport_c.c
+[1.903s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/_info_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[1.903s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/info_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.903s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/libinfo_interfaces__rosidl_generator_py.so
+[1.903s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/msg
+[1.903s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/msg/_map.py
+[1.903s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/msg/__init__.py
+[1.903s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/msg/_area.py
+[1.903s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/msg/_map_s.c
+[1.903s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/msg/_robot.py
+[1.903s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/msg/_point.py
+[1.903s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/msg/_robot_s.c
+[1.903s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/msg/_point_s.c
+[1.904s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/msg/_area_s.c
+[1.904s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/info_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.937s] Listing '/home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces'...
+[1.937s] Compiling '/home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/__init__.py'...
+[1.937s] Listing '/home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/msg'...
+[1.937s] Compiling '/home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/msg/__init__.py'...
+[1.937s] Compiling '/home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/msg/_area.py'...
+[1.937s] Compiling '/home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/msg/_map.py'...
+[1.937s] Compiling '/home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/msg/_point.py'...
+[1.937s] Compiling '/home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/msg/_robot.py'...
+[1.940s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/info_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.940s] -- Set runtime path of "/home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/info_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[1.940s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/info_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.940s] -- Set runtime path of "/home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/info_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[1.940s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/info_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.940s] -- Set runtime path of "/home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages/info_interfaces/info_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[1.940s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/lib/libinfo_interfaces__rosidl_generator_py.so
+[1.940s] -- Set runtime path of "/home/wuqilin/ros2_ws/install/info_interfaces/lib/libinfo_interfaces__rosidl_generator_py.so" to ""
+[1.940s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/msg/Area.idl
+[1.940s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/msg/Map.idl
+[1.940s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/msg/Point.idl
+[1.940s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/msg/Robot.idl
+[1.940s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/msg/Area.msg
+[1.940s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/msg/Map.msg
+[1.940s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/msg/Point.msg
+[1.940s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/msg/Robot.msg
+[1.940s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/ament_index/resource_index/package_run_dependencies/info_interfaces
+[1.940s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/share/ament_index/resource_index/parent_prefix_path/info_interfaces
+[1.940s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/environment/ament_prefix_path.sh
+[1.940s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/environment/ament_prefix_path.dsv
+[1.940s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/environment/path.sh
+[1.940s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/environment/path.dsv
+[1.941s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/local_setup.bash
+[1.941s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/local_setup.sh
+[1.941s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/local_setup.zsh
+[1.941s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/local_setup.dsv
+[1.941s] -- Installing: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/package.dsv
+[1.941s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/ament_index/resource_index/packages/info_interfaces
+[1.941s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/cmake/export_info_interfaces__rosidl_generator_cExport.cmake
+[1.941s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/cmake/export_info_interfaces__rosidl_generator_cExport-noconfig.cmake
+[1.941s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/cmake/export_info_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[1.941s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/cmake/export_info_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[1.941s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/cmake/info_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[1.941s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/cmake/info_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.941s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/cmake/info_interfaces__rosidl_typesupport_cExport.cmake
+[1.941s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/cmake/info_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[1.941s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/cmake/export_info_interfaces__rosidl_generator_cppExport.cmake
+[1.941s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/cmake/export_info_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[1.941s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/cmake/export_info_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[1.941s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/cmake/info_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[1.941s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/cmake/info_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.941s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/cmake/info_interfaces__rosidl_typesupport_cppExport.cmake
+[1.941s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/cmake/info_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[1.941s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/cmake/export_info_interfaces__rosidl_generator_pyExport.cmake
+[1.941s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/cmake/export_info_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[1.941s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/cmake/rosidl_cmake-extras.cmake
+[1.941s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.941s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[1.941s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[1.941s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.941s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.941s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.942s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/cmake/info_interfacesConfig.cmake
+[1.942s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/cmake/info_interfacesConfig-version.cmake
+[1.942s] -- Up-to-date: /home/wuqilin/ros2_ws/install/info_interfaces/share/info_interfaces/package.xml
+[1.942s] Invoked command in '/home/wuqilin/ros2_ws/build/info_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/wuqilin/ros2_ws/build/info_interfaces

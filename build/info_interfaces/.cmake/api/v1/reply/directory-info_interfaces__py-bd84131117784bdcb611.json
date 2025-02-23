@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "info_interfaces__py",
+		"source" : "/home/wuqilin/ros2_ws/build/info_interfaces/info_interfaces__py"
+	}
+}

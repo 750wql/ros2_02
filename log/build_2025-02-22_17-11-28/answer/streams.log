@@ -1,0 +1,26 @@
+[0.007s] Invoking command in '/home/wuqilin/ros2_ws/build/answer': CMAKE_PREFIX_PATH=/home/wuqilin/ros2_ws/install/info_interfaces:/home/wuqilin/ros2_ws/install/answer:/opt/ros/humble /usr/bin/cmake --build /home/wuqilin/ros2_ws/build/answer -- -j32 -l32
+[0.048s] [ 25%] [32mBuilding CXX object CMakeFiles/navigation_node.dir/src/navigation_node.cpp.o[0m
+[0.049s] [ 75%] Built target img2map_node
+[1.113s] [01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:[m[K In member function ‘[01m[Kvoid navigation::Node::robot_navigation_cbfn(info_interfaces::msg::Robot_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.113s] [01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:79:85:[m[K [01;31m[Kerror: [m[K‘[01m[Knearest_enemy[m[K’ was not declared in this scope
+[1.113s]    79 |             double distance_to_enemy = std::sqrt(std::pow(robot_info->our_robot.x - [01;31m[Knearest_enemy[m[K.x, 2) + std::pow(robot_info->our_robot.y - nearest_enemy.y, 2));
+[1.113s]       |                                                                                     [01;31m[K^~~~~~~~~~~~~[m[K
+[1.113s] [01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:95:37:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+[1.113s]    95 | void navigation::Node::password_cbfn[01;31m[K([m[Kconst example_interfaces::msg::Int64::SharedPtr password)
+[1.113s]       |                                     [01;31m[K^[m[K
+[1.113s] [01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:100:45:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+[1.113s]   100 | void navigation::Node::password_segment_cbfn[01;31m[K([m[Kconst example_interfaces::msg::Int64::SharedPtr password_segment)
+[1.113s]       |                                             [01;31m[K^[m[K
+[1.113s] [01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:105:33:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+[1.113s]   105 | int main(int argc, char** argv) [01;31m[K{[m[K
+[1.113s]       |                                 [01;31m[K^[m[K
+[1.113s] [01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:111:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[1.113s]   111 | }
+[1.113s]       |  [01;31m[K^[m[K
+[1.113s] [01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:34:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[1.113s]    34 | [01;36m[K{[m[K
+[1.113s]       | [01;36m[K^[m[K
+[3.706s] gmake[2]: *** [CMakeFiles/navigation_node.dir/build.make:76：CMakeFiles/navigation_node.dir/src/navigation_node.cpp.o] 错误 1
+[3.706s] gmake[1]: *** [CMakeFiles/Makefile2:165：CMakeFiles/navigation_node.dir/all] 错误 2
+[3.706s] gmake: *** [Makefile:146：all] 错误 2
+[3.708s] Invoked command in '/home/wuqilin/ros2_ws/build/answer' returned '2': CMAKE_PREFIX_PATH=/home/wuqilin/ros2_ws/install/info_interfaces:/home/wuqilin/ros2_ws/install/answer:/opt/ros/humble /usr/bin/cmake --build /home/wuqilin/ros2_ws/build/answer -- -j32 -l32

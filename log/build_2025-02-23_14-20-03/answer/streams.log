@@ -1,0 +1,40 @@
+[0.009s] Invoking command in '/home/wuqilin/ros2_ws/build/answer': AMENT_PREFIX_PATH=/home/wuqilin/ros2_ws/install/info_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wuqilin/ros2_ws/install/info_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/wuqilin/ros2_ws/install/info_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/wuqilin/ros2_ws/build/answer -- -j32 -l32
+[0.050s] [ 50%] Built target img2map_node
+[0.051s] [ 75%] [32mBuilding CXX object CMakeFiles/navigation_node.dir/src/navigation_node.cpp.o[0m
+[8.272s] [100%] [32m[1mLinking CXX executable navigation_node[0m
+[8.751s] [100%] Built target navigation_node
+[8.755s] Invoked command in '/home/wuqilin/ros2_ws/build/answer' returned '0': AMENT_PREFIX_PATH=/home/wuqilin/ros2_ws/install/info_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wuqilin/ros2_ws/install/info_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/wuqilin/ros2_ws/install/info_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/wuqilin/ros2_ws/build/answer -- -j32 -l32
+[8.756s] Invoking command in '/home/wuqilin/ros2_ws/build/answer': AMENT_PREFIX_PATH=/home/wuqilin/ros2_ws/install/info_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wuqilin/ros2_ws/install/info_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/wuqilin/ros2_ws/install/info_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/wuqilin/ros2_ws/build/answer
+[8.760s] -- Install configuration: ""
+[8.760s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/lib/answer/img2map_node
+[8.762s] -- Installing: /home/wuqilin/ros2_ws/install/answer/lib/answer/navigation_node
+[8.766s] -- Set runtime path of "/home/wuqilin/ros2_ws/install/answer/lib/answer/navigation_node" to ""
+[8.767s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/launch
+[8.767s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/launch/answer.launch.py
+[8.767s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/include
+[8.767s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/include/answer
+[8.767s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/include/answer/constant.hpp
+[8.767s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/include/answer/my_serial.hpp
+[8.767s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/include/answer/img2map_node.hpp
+[8.767s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/include/answer/serial.hpp
+[8.767s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/include/answer/navigation_node.hpp
+[8.767s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/lib/answer/img2map_node
+[8.767s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/lib/answer/navigation_node
+[8.768s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/ament_index/resource_index/package_run_dependencies/answer
+[8.768s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/ament_index/resource_index/parent_prefix_path/answer
+[8.768s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/environment/ament_prefix_path.sh
+[8.768s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/environment/ament_prefix_path.dsv
+[8.768s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/environment/path.sh
+[8.768s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/environment/path.dsv
+[8.768s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/local_setup.bash
+[8.768s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/local_setup.sh
+[8.768s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/local_setup.zsh
+[8.769s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/local_setup.dsv
+[8.769s] -- Installing: /home/wuqilin/ros2_ws/install/answer/share/answer/package.dsv
+[8.769s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/ament_index/resource_index/packages/answer
+[8.769s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/cmake/ament_cmake_export_dependencies-extras.cmake
+[8.769s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/cmake/ament_cmake_export_include_directories-extras.cmake
+[8.769s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/cmake/answerConfig.cmake
+[8.769s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/cmake/answerConfig-version.cmake
+[8.769s] -- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/package.xml
+[8.771s] Invoked command in '/home/wuqilin/ros2_ws/build/answer' returned '0': AMENT_PREFIX_PATH=/home/wuqilin/ros2_ws/install/info_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wuqilin/ros2_ws/install/info_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/wuqilin/ros2_ws/install/info_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/wuqilin/ros2_ws/install/info_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/wuqilin/ros2_ws/build/answer

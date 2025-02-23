@@ -1,0 +1,27 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from info_interfaces/src/msg/Area.msg
+// generated code does not contain a copyright notice
+
+#include "info_interfaces/msg/Point.idl"
+
+module info_interfaces {
+  module msg {
+    struct Area {
+      info_interfaces::msg::Point base;
+
+      info_interfaces::msg::Point recover;
+
+      info_interfaces::msg::Point password;
+
+      info_interfaces::msg::Point green_in;
+
+      info_interfaces::msg::Point green_out;
+
+      info_interfaces::msg::Point purple_in;
+
+      info_interfaces::msg::Point purple_out;
+
+      info_interfaces::msg::Point hp;
+    };
+  };
+};

@@ -1,0 +1,9 @@
+[ 50%] Built target img2map_node
+[ 75%] [32mBuilding CXX object CMakeFiles/navigation_node.dir/src/navigation_node.cpp.o[0m
+[01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:[m[K In member function ‘[01m[Kvoid navigation::Node::area_init_cbfn(info_interfaces::msg::Area_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:34:9:[m[K [01;31m[Kerror: [m[K‘[01m[Km_recover[m[K’ was not declared in this scope
+   34 |         [01;31m[Km_recover[m[K.x = area_info->recover.x;
+      |         [01;31m[K^~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/navigation_node.dir/build.make:76：CMakeFiles/navigation_node.dir/src/navigation_node.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:165：CMakeFiles/navigation_node.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

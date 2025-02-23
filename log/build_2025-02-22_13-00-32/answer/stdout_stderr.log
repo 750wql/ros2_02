@@ -1,0 +1,8 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/ImageSubscriber.dir/src/ImageSubscriber.cpp.o[0m
+[01m[K/home/wuqilin/ros2_ws/src/answer/src/ImageSubscriber.cpp:5:10:[m[K [01;31m[Kfatal error: [m[Ksensor_msgs/msg/image.hpp: 没有那个文件或目录
+    5 | #include [01;31m[K"sensor_msgs/msg/image.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/ImageSubscriber.dir/build.make:76：CMakeFiles/ImageSubscriber.dir/src/ImageSubscriber.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/ImageSubscriber.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

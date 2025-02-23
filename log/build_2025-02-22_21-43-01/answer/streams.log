@@ -1,0 +1,20 @@
+[0.008s] Invoking command in '/home/wuqilin/ros2_ws/build/answer': CMAKE_PREFIX_PATH=/home/wuqilin/ros2_ws/install/info_interfaces:/home/wuqilin/ros2_ws/install/answer:/opt/ros/humble /usr/bin/cmake --build /home/wuqilin/ros2_ws/build/answer -- -j32 -l32
+[0.053s] [ 50%] Built target img2map_node
+[0.054s] [ 75%] [32mBuilding CXX object CMakeFiles/navigation_node.dir/src/navigation_node.cpp.o[0m
+[1.195s] [01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:[m[K In member function ‘[01m[Kvoid navigation::Node::robot_navigation_cbfn(info_interfaces::msg::Robot_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.195s] [01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:119:30:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Krecover[m[K’ in ‘[01m[Ktopic_name::area[m[K’, which is of non-class type ‘[01m[Kconst char*[m[K’
+[1.195s]   119 |             topic_name::area.[01;31m[Krecover[m[K.x,
+[1.195s]       |                              [01;31m[K^~~~~~~[m[K
+[1.195s] [01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:120:30:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Krecover[m[K’ in ‘[01m[Ktopic_name::area[m[K’, which is of non-class type ‘[01m[Kconst char*[m[K’
+[1.195s]   120 |             topic_name::area.[01;31m[Krecover[m[K.y
+[1.195s]       |                              [01;31m[K^~~~~~~[m[K
+[1.197s] [01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:152:54:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Krecover[m[K’ in ‘[01m[Ktopic_name::area[m[K’, which is of non-class type ‘[01m[Kconst char*[m[K’
+[1.197s]   152 |             pose.theta = std::atan2(topic_name::area.[01;31m[Krecover[m[K.y - robot_y, topic_name::area.recover.x - robot_x);
+[1.197s]       |                                                      [01;31m[K^~~~~~~[m[K
+[1.197s] [01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:152:92:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Krecover[m[K’ in ‘[01m[Ktopic_name::area[m[K’, which is of non-class type ‘[01m[Kconst char*[m[K’
+[1.197s]   152 |             pose.theta = std::atan2(topic_name::area.recover.y - robot_y, topic_name::area.[01;31m[Krecover[m[K.x - robot_x);
+[1.197s]       |                                                                                            [01;31m[K^~~~~~~[m[K
+[4.080s] gmake[2]: *** [CMakeFiles/navigation_node.dir/build.make:76：CMakeFiles/navigation_node.dir/src/navigation_node.cpp.o] 错误 1
+[4.080s] gmake[1]: *** [CMakeFiles/Makefile2:165：CMakeFiles/navigation_node.dir/all] 错误 2
+[4.081s] gmake: *** [Makefile:146：all] 错误 2
+[4.082s] Invoked command in '/home/wuqilin/ros2_ws/build/answer' returned '2': CMAKE_PREFIX_PATH=/home/wuqilin/ros2_ws/install/info_interfaces:/home/wuqilin/ros2_ws/install/answer:/opt/ros/humble /usr/bin/cmake --build /home/wuqilin/ros2_ws/build/answer -- -j32 -l32

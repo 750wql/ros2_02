@@ -1,0 +1,41 @@
+[0.007s] Invoking command in '/home/wuqilin/ros2_ws/build/answer': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/wuqilin/ros2_ws/build/answer -- -j32 -l32
+[0.024s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.116s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.155s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.158s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.169s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.182s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.200s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.227s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.228s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.305s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.357s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.381s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[0.385s] -- Found example_interfaces: 0.9.3 (/opt/ros/humble/share/example_interfaces/cmake)
+[0.429s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.489s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.489s] -- Configured cppcheck include dirs: 
+[0.489s] -- Configured cppcheck exclude dirs and/or files: 
+[0.490s] -- Added test 'lint_cmake' to check CMake code style
+[0.493s] -- Added test 'uncrustify' to check C / C++ code style
+[0.493s] -- Configured uncrustify additional arguments: 
+[0.494s] -- Added test 'xmllint' to check XML markup files
+[0.495s] -- Configuring done
+[0.508s] -- Generating done
+[0.510s] -- Build files have been written to: /home/wuqilin/ros2_ws/build/answer
+[0.530s] [ 66%] [32mBuilding CXX object CMakeFiles/ImageSubscriber.dir/src/img2map_node.cpp.o[0m
+[0.530s] [ 66%] [32mBuilding CXX object CMakeFiles/ImageSubscriber.dir/src/navigation_node.cpp.o[0m
+[0.542s] [01m[K/home/wuqilin/ros2_ws/src/answer/src/img2map_node.cpp:4:10:[m[K [01;31m[Kfatal error: [m[Kimg2map_node.hpp: 没有那个文件或目录
+[0.542s]     4 | #include [01;31m[K"img2map_node.hpp"[m[K
+[0.542s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[0.542s] [01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:4:10:[m[K [01;31m[Kfatal error: [m[Knavigation_node.hpp: 没有那个文件或目录
+[0.542s]     4 | #include [01;31m[K"navigation_node.hpp"[m[K
+[0.542s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[0.542s] compilation terminated.
+[0.542s] compilation terminated.
+[0.543s] gmake[2]: *** [CMakeFiles/ImageSubscriber.dir/build.make:76：CMakeFiles/ImageSubscriber.dir/src/img2map_node.cpp.o] 错误 1
+[0.543s] gmake[2]: *** 正在等待未完成的任务....
+[0.543s] gmake[2]: *** [CMakeFiles/ImageSubscriber.dir/build.make:90：CMakeFiles/ImageSubscriber.dir/src/navigation_node.cpp.o] 错误 1
+[0.543s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/ImageSubscriber.dir/all] 错误 2
+[0.543s] gmake: *** [Makefile:146：all] 错误 2
+[0.545s] Invoked command in '/home/wuqilin/ros2_ws/build/answer' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/wuqilin/ros2_ws/build/answer -- -j32 -l32

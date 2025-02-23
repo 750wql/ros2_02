@@ -1,0 +1,19 @@
+[01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:[m[K In member function ‘[01m[Kvoid navigation::Node::robot_navigation_cbfn(info_interfaces::msg::Robot_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:95:37:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+   95 | void navigation::Node::password_cbfn[01;31m[K([m[Kconst example_interfaces::msg::Int64::SharedPtr password)
+      |                                     [01;31m[K^[m[K
+[01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:100:45:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+  100 | void navigation::Node::password_segment_cbfn[01;31m[K([m[Kconst example_interfaces::msg::Int64::SharedPtr password_segment)
+      |                                             [01;31m[K^[m[K
+[01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:105:33:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+  105 | int main(int argc, char** argv) [01;31m[K{[m[K
+      |                                 [01;31m[K^[m[K
+[01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:111:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+  111 | }
+      |  [01;31m[K^[m[K
+[01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:34:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   34 | [01;36m[K{[m[K
+      | [01;36m[K^[m[K
+gmake[2]: *** [CMakeFiles/navigation_node.dir/build.make:76：CMakeFiles/navigation_node.dir/src/navigation_node.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:165：CMakeFiles/navigation_node.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

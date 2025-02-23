@@ -1,0 +1,11 @@
+setup.py
+info_interfaces/__init__.py
+info_interfaces.egg-info/PKG-INFO
+info_interfaces.egg-info/SOURCES.txt
+info_interfaces.egg-info/dependency_links.txt
+info_interfaces.egg-info/top_level.txt
+info_interfaces/msg/__init__.py
+info_interfaces/msg/_area.py
+info_interfaces/msg/_map.py
+info_interfaces/msg/_point.py
+info_interfaces/msg/_robot.py

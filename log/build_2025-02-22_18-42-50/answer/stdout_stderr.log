@@ -1,0 +1,40 @@
+[ 50%] Built target img2map_node
+[ 75%] [32mBuilding CXX object CMakeFiles/navigation_node.dir/src/navigation_node.cpp.o[0m
+[01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:[m[K In member function ‘[01m[Kvoid navigation::Node::robot_navigation_cbfn(info_interfaces::msg::Robot_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:47:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kgun_offset_y[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   47 |     double [01;35m[Kgun_offset_y[m[K = 0.0;  // 枪口相对于机器人中心的偏移量（y方向）
+      |            [01;35m[K^~~~~~~~~~~~[m[K
+[100%] [32m[1mLinking CXX executable navigation_node[0m
+[100%] Built target navigation_node
+-- Install configuration: ""
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/lib/answer/img2map_node
+-- Installing: /home/wuqilin/ros2_ws/install/answer/lib/answer/navigation_node
+-- Set runtime path of "/home/wuqilin/ros2_ws/install/answer/lib/answer/navigation_node" to ""
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/launch
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/launch/answer.launch.py
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/include
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/include/answer
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/include/answer/constant.hpp
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/include/answer/my_serial.hpp
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/include/answer/img2map_node.hpp
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/include/answer/serial.hpp
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/include/answer/navigation_node.hpp
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/lib/answer/img2map_node
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/lib/answer/navigation_node
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/ament_index/resource_index/package_run_dependencies/answer
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/ament_index/resource_index/parent_prefix_path/answer
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/environment/ament_prefix_path.sh
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/environment/path.sh
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/environment/path.dsv
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/local_setup.bash
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/local_setup.sh
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/local_setup.zsh
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/local_setup.dsv
+-- Installing: /home/wuqilin/ros2_ws/install/answer/share/answer/package.dsv
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/ament_index/resource_index/packages/answer
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/cmake/answerConfig.cmake
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/cmake/answerConfig-version.cmake
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/package.xml

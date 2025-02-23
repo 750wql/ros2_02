@@ -1,0 +1,17 @@
+[01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:[m[K In member function ‘[01m[Kvoid navigation::Node::robot_navigation_cbfn(info_interfaces::msg::Robot_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:79:27:[m[K [01;31m[Kerror: [m[K‘[01m[Krobot[m[K’ was not declared in this scope; did you mean ‘[01m[Ktopic_name::robot[m[K’?
+   79 |         int enemy_count = [01;31m[Krobot[m[K.enemy.size();
+      |                           [01;31m[K^~~~~[m[K
+      |                           [32m[Ktopic_name::robot[m[K
+In file included from [01m[K/home/wuqilin/ros2_ws/src/answer/include/answer/navigation_node.hpp:21[m[K,
+                 from [01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:4[m[K:
+[01m[K/home/wuqilin/ros2_ws/src/answer/include/answer/constant.hpp:11:17:[m[K [01;36m[Knote: [m[K‘[01m[Ktopic_name::robot[m[K’ declared here
+   11 |     const char* [01;36m[Krobot[m[K = "robot";
+      |                 [01;36m[K^~~~~[m[K
+gmake[2]: *** [CMakeFiles/navigation_node.dir/build.make:76：CMakeFiles/navigation_node.dir/src/navigation_node.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:165：CMakeFiles/navigation_node.dir/all] 错误 2
+gmake[1]: *** 正在等待未完成的任务....
+/usr/bin/ld: warning: libopencv_imgcodecs.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgcodecs.so.408
+/usr/bin/ld: warning: libopencv_imgproc.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.408
+/usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.408
+gmake: *** [Makefile:146：all] 错误 2

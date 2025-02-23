@@ -1,0 +1,7 @@
+[01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:[m[K In member function ‘[01m[Kvoid navigation::Node::robot_navigation_cbfn(info_interfaces::msg::Robot_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:48:81:[m[K [01;31m[Kerror: [m[K‘[01m[Km_last_move_time[m[K’ was not declared in this scope
+   48 |             if (std::chrono::duration_cast<std::chrono::seconds>(current_time - [01;31m[Km_last_move_time[m[K) > 3.0)
+      |                                                                                 [01;31m[K^~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/navigation_node.dir/build.make:76：CMakeFiles/navigation_node.dir/src/navigation_node.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:165：CMakeFiles/navigation_node.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

@@ -1,0 +1,19 @@
+[0.006s] Invoking command in '/home/wuqilin/ros2_ws/build/answer': CMAKE_PREFIX_PATH=/home/wuqilin/ros2_ws/install/info_interfaces:/home/wuqilin/ros2_ws/install/answer:/opt/ros/humble /usr/bin/cmake --build /home/wuqilin/ros2_ws/build/answer -- -j32 -l32
+[0.031s] [ 50%] [32mBuilding CXX object CMakeFiles/navigation_node.dir/src/navigation_node.cpp.o[0m
+[0.031s] [ 75%] Built target img2map_node
+[1.208s] [01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:[m[K In member function ‘[01m[Kvoid navigation::Node::robot_navigation_cbfn(info_interfaces::msg::Robot_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.208s] [01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:127:41:[m[K [01;31m[Kerror: [m[K‘[01m[Knumber[m[K’ was not declared in this scope
+[1.208s]   127 |                 if (path.size() >= 2 && [01;31m[Knumber[m[K <= 5)
+[1.208s]       |                                         [01;31m[K^~~~~~[m[K
+[1.213s] [01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:131:23:[m[K [01;31m[Kerror: [m[K‘[01m[Krobot_x[m[K’ was not declared in this scope; did you mean ‘[01m[Krobot_info[m[K’?
+[1.213s]   131 |             pose.x -= [01;31m[Krobot_x[m[K;
+[1.213s]       |                       [01;31m[K^~~~~~~[m[K
+[1.213s]       |                       [32m[Krobot_info[m[K
+[1.215s] [01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:132:23:[m[K [01;31m[Kerror: [m[K‘[01m[Krobot_y[m[K’ was not declared in this scope; did you mean ‘[01m[Krobot_info[m[K’?
+[1.215s]   132 |             pose.y -= [01;31m[Krobot_y[m[K;
+[1.215s]       |                       [01;31m[K^~~~~~~[m[K
+[1.215s]       |                       [32m[Krobot_info[m[K
+[4.210s] gmake[2]: *** [CMakeFiles/navigation_node.dir/build.make:76：CMakeFiles/navigation_node.dir/src/navigation_node.cpp.o] 错误 1
+[4.210s] gmake[1]: *** [CMakeFiles/Makefile2:165：CMakeFiles/navigation_node.dir/all] 错误 2
+[4.210s] gmake: *** [Makefile:146：all] 错误 2
+[4.211s] Invoked command in '/home/wuqilin/ros2_ws/build/answer' returned '2': CMAKE_PREFIX_PATH=/home/wuqilin/ros2_ws/install/info_interfaces:/home/wuqilin/ros2_ws/install/answer:/opt/ros/humble /usr/bin/cmake --build /home/wuqilin/ros2_ws/build/answer -- -j32 -l32

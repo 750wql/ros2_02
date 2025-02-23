@@ -1,0 +1,40 @@
+[0.005s] Invoking command in '/home/wuqilin/ros2_ws/build/answer': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/wuqilin/ros2_ws/build/answer -- -j32 -l32
+[0.038s] [ 50%] [32mBuilding CXX object CMakeFiles/ImageSubsciber.dir/src/ImageSubscriber.cpp.o[0m
+[1.408s] [01m[K/home/wuqilin/ros2_ws/src/answer/src/ImageSubscriber.cpp:[m[K In constructor ‘[01m[KImageSubscriber::ImageSubscriber()[m[K’:
+[1.409s] [01m[K/home/wuqilin/ros2_ws/src/answer/src/ImageSubscriber.cpp:12:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_subscription_t[m[K’?
+[1.409s]    12 |     [01;31m[Ksubscription_[m[K = this->create_subscription<sensor_msgs::msg::Image>(
+[1.409s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[1.409s]       |     [32m[Krmw_subscription_t[m[K
+[1.413s] [01m[K/home/wuqilin/ros2_ws/src/answer/src/ImageSubscriber.cpp:12:47:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_msgs[m[K’ was not declared in this scope
+[1.413s]    12 |     subscription_ = this->create_subscription<[01;31m[Ksensor_msgs[m[K::msg::Image>(
+[1.413s]       |                                               [01;31m[K^~~~~~~~~~~[m[K
+[1.413s] [01m[K/home/wuqilin/ros2_ws/src/answer/src/ImageSubscriber.cpp:12:27:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[1.413s]    12 |     subscription_ = this->[01;31m[Kcreate_subscription<sensor_msgs::msg::Image>[m[K(
+[1.413s]       |                           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.414s] [01m[K/home/wuqilin/ros2_ws/src/answer/src/ImageSubscriber.cpp:13:50:[m[K [01;31m[Kerror: [m[K‘[01m[Kimage_callback[m[K’ is not a member of ‘[01m[KImageSubscriber[m[K’
+[1.414s]    13 |       "image_raw",10,std::bind(&ImageSubscriber::[01;31m[Kimage_callback[m[K, this, std::placeholders::_1));
+[1.414s]       |                                                  [01;31m[K^~~~~~~~~~~~~~[m[K
+[1.414s] [01m[K/home/wuqilin/ros2_ws/src/answer/src/ImageSubscriber.cpp:[m[K At global scope:
+[1.414s] [01m[K/home/wuqilin/ros2_ws/src/answer/src/ImageSubscriber.cpp:16:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kprivate[m[K’
+[1.414s]    16 | [01;31m[Kprivate[m[K:
+[1.414s]       | [01;31m[K^~~~~~~[m[K
+[1.416s] [01m[K/home/wuqilin/ros2_ws/src/answer/src/ImageSubscriber.cpp:24:26:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_msgs[m[K’ was not declared in this scope
+[1.416s]    24 |     rclcpp::Subscription<[01;31m[Ksensor_msgs[m[K::msg::Image>::SharedPtr image_subscription_;
+[1.416s]       |                          [01;31m[K^~~~~~~~~~~[m[K
+[1.416s] [01m[K/home/wuqilin/ros2_ws/src/answer/src/ImageSubscriber.cpp:24:49:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.416s]    24 |     rclcpp::Subscription<sensor_msgs::msg::Image[01;31m[K>[m[K::SharedPtr image_subscription_;
+[1.416s]       |                                                 [01;31m[K^[m[K
+[1.416s] [01m[K/home/wuqilin/ros2_ws/src/answer/src/ImageSubscriber.cpp:24:49:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[1.416s] [01m[K/home/wuqilin/ros2_ws/src/answer/src/ImageSubscriber.cpp:24:49:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[1.416s] [01m[K/home/wuqilin/ros2_ws/src/answer/src/ImageSubscriber.cpp:24:49:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[1.416s] [01m[K/home/wuqilin/ros2_ws/src/answer/src/ImageSubscriber.cpp:24:62:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kimage_subscription_[m[K’
+[1.416s]    24 |    rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr [01;31m[Kimage_subscription_[m[K;
+[1.416s]       |                                                             [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[1.416s] 
+[1.416s] [01m[K/home/wuqilin/ros2_ws/src/answer/src/ImageSubscriber.cpp:25:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+[1.417s]    25 | [01;31m[K}[m[K;
+[1.417s]       | [01;31m[K^[m[K
+[1.798s] gmake[2]: *** [CMakeFiles/ImageSubsciber.dir/build.make:76：CMakeFiles/ImageSubsciber.dir/src/ImageSubscriber.cpp.o] 错误 1
+[1.798s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/ImageSubsciber.dir/all] 错误 2
+[1.798s] gmake: *** [Makefile:146：all] 错误 2
+[1.800s] Invoked command in '/home/wuqilin/ros2_ws/build/answer' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/wuqilin/ros2_ws/build/answer -- -j32 -l32

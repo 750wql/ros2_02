@@ -1,0 +1,9 @@
+[ 50%] Built target img2map_node
+[ 75%] [32mBuilding CXX object CMakeFiles/navigation_node.dir/src/navigation_node.cpp.o[0m
+[01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:[m[K In member function ‘[01m[Kvoid navigation::Node::robot_navigation_cbfn(info_interfaces::msg::Robot_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:87:21:[m[K [01;31m[Kerror: [m[K‘[01m[Karea_info[m[K’ was not declared in this scope
+   87 |                 if ([01;31m[Karea_info[m[K->green_in.empty())
+      |                     [01;31m[K^~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/navigation_node.dir/build.make:76：CMakeFiles/navigation_node.dir/src/navigation_node.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:165：CMakeFiles/navigation_node.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

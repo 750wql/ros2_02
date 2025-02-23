@@ -1,0 +1,39 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/img2map_node.dir/src/img2map_node.cpp.o[0m
+[ 75%] Built target navigation_node
+[100%] [32m[1mLinking CXX executable img2map_node[0m
+/usr/bin/ld: warning: libopencv_imgcodecs.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgcodecs.so.408
+/usr/bin/ld: warning: libopencv_imgproc.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.408
+/usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.408
+[100%] Built target img2map_node
+-- Install configuration: ""
+-- Installing: /home/wuqilin/ros2_ws/install/answer/lib/answer/img2map_node
+-- Set runtime path of "/home/wuqilin/ros2_ws/install/answer/lib/answer/img2map_node" to ""
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/lib/answer/navigation_node
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/launch
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/launch/answer.launch.py
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/include
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/include/answer
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/include/answer/constant.hpp
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/include/answer/my_serial.hpp
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/include/answer/img2map_node.hpp
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/include/answer/serial.hpp
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/include/answer/navigation_node.hpp
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/lib/answer/img2map_node
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/lib/answer/navigation_node
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/ament_index/resource_index/package_run_dependencies/answer
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/ament_index/resource_index/parent_prefix_path/answer
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/environment/ament_prefix_path.sh
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/environment/path.sh
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/environment/path.dsv
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/local_setup.bash
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/local_setup.sh
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/local_setup.zsh
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/local_setup.dsv
+-- Installing: /home/wuqilin/ros2_ws/install/answer/share/answer/package.dsv
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/ament_index/resource_index/packages/answer
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/cmake/answerConfig.cmake
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/cmake/answerConfig-version.cmake
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/package.xml

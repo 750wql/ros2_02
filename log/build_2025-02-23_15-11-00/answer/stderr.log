@@ -1,0 +1,25 @@
+[01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:[m[K In member function ‘[01m[Kvoid navigation::Node::area_init_cbfn(info_interfaces::msg::Area_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:40:10:[m[K [01;31m[Kerror: [m[K‘[01m[Krobot_info[m[K’ was not declared in this scope
+   40 |          [01;31m[Krobot_info[m[K->our_robot.x,
+      |          [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:45:29:[m[K [01;31m[Kerror: [m[K‘[01m[Knumber[m[K’ was not declared in this scope
+   45 |     if (path.size() >= 2 && [01;31m[Knumber[m[K >5)
+      |                             [01;31m[K^~~~~~[m[K
+[01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:47:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kpose[m[K’ was not declared in this scope; did you mean ‘[01m[Ktopic_name::pose[m[K’?
+   47 |             std::tie([01;31m[Kpose[m[K.x, pose.y) = path[1];
+      |                      [01;31m[K^~~~[m[K
+      |                      [32m[Ktopic_name::pose[m[K
+In file included from [01m[K/home/wuqilin/ros2_ws/src/answer/include/answer/navigation_node.hpp:21[m[K,
+                 from [01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:4[m[K:
+[01m[K/home/wuqilin/ros2_ws/src/answer/include/answer/constant.hpp:12:17:[m[K [01;36m[Knote: [m[K‘[01m[Ktopic_name::pose[m[K’ declared here
+   12 |     const char* [01;36m[Kpose[m[K = "pose";
+      |                 [01;36m[K^~~~[m[K
+[01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:35:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Krecover_x[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   35 |     double [01;35m[Krecover_x[m[K = area_info->recover.x;
+      |            [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/wuqilin/ros2_ws/src/answer/src/navigation_node.cpp:36:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Krecover_y[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   36 |     double [01;35m[Krecover_y[m[K = area_info->recover.y;
+      |            [01;35m[K^~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/navigation_node.dir/build.make:76：CMakeFiles/navigation_node.dir/src/navigation_node.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:165：CMakeFiles/navigation_node.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

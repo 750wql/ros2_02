@@ -1,0 +1,21 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/ImageSubscriber.dir/src/ImageSubscriber.cpp.o[0m
+[100%] [32m[1mLinking CXX executable ImageSubscriber[0m
+[100%] Built target ImageSubscriber
+-- Install configuration: ""
+-- Installing: /home/wuqilin/ros2_ws/install/answer/lib/answer/ImageSubscriber
+-- Set runtime path of "/home/wuqilin/ros2_ws/install/answer/lib/answer/ImageSubscriber" to ""
+-- Installing: /home/wuqilin/ros2_ws/install/answer/share/ament_index/resource_index/package_run_dependencies/answer
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/ament_index/resource_index/parent_prefix_path/answer
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/environment/ament_prefix_path.sh
+-- Installing: /home/wuqilin/ros2_ws/install/answer/share/answer/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/environment/path.sh
+-- Installing: /home/wuqilin/ros2_ws/install/answer/share/answer/environment/path.dsv
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/local_setup.bash
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/local_setup.sh
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/local_setup.zsh
+-- Installing: /home/wuqilin/ros2_ws/install/answer/share/answer/local_setup.dsv
+-- Installing: /home/wuqilin/ros2_ws/install/answer/share/answer/package.dsv
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/ament_index/resource_index/packages/answer
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/cmake/answerConfig.cmake
+-- Up-to-date: /home/wuqilin/ros2_ws/install/answer/share/answer/cmake/answerConfig-version.cmake
+-- Installing: /home/wuqilin/ros2_ws/install/answer/share/answer/package.xml
