@@ -19,7 +19,6 @@
 #include "info_interfaces/msg/robot.hpp"
 
 #include "constant.hpp"
-
 namespace navigation {
     namespace algorithm {
         struct Node {
@@ -156,6 +155,7 @@ namespace navigation {
         info_interfaces::msg::Map::SharedPtr m_map;
         example_interfaces::msg::Int64 m_password;
         std::vector<example_interfaces::msg::Int64> m_password_segment_vec;
+        // 其他成员变量
         int m_count;
         uint32_t m_last_x;
         uint32_t m_last_y;

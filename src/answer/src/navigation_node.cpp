@@ -81,40 +81,124 @@ void navigation::Node::robot_navigation_cbfn(const info_interfaces::msg::Robot::
       	int enemy_count = robot_info->enemy.size();
 		RCLCPP_INFO(get_logger(), "Number of enemies detected: %d", enemy_count);
 
-        if (robot_info->enemy.empty()) return;
-        else if(enemy_count == 1)
+        if (robot_info->enemy.empty())
         {
-        	double green_in_x = m_area.green_in.x;
-            double green_in_y = m_area.green_in.y;
-            algorithm::Path path_2 = algorithm::a_star(
+          	double password_x = m_area.password.x;
+            double password_y = m_area.password.y;
+           	algorithm::Path path_4 = algorithm::a_star(
             	this->m_map,
             	robot_info->our_robot.x,
             	robot_info->our_robot.y,
-            	green_in_x,
-            	green_in_y
+            	password_x,
+            	password_y
         	);
-            std::tie(pose.x, pose.y) = path_2[1];
-            RCLCPP_INFO(get_logger(), "pathx_2:%d, pathy_2:%d", path_2[1].first, path_2[1].second);
-            pose.x -= robot_info->our_robot.x;
-            pose.y -= robot_info->our_robot.y;
-            pose.x /= 16;
-            pose.y /= 16;
-            pose.theta = std::atan2(green_in_y - robot_info->our_robot.y, green_in_x - robot_info->our_robot.x);// 计算自己相对于入口的角度
-            RCLCPP_INFO(get_logger(), "posex:%lf, posey:%lf theta:%lf", pose.x, pose.y, pose.theta);
-			m_our_pose_publisher->publish(pose);// 发布新的姿态信息
-             // 检查是否到达绿色区域（距离小于某个阈值）
-        	double distance_to_green = std::sqrt(std::pow(robot_info->our_robot.x - green_in_x, 2) + std::pow(robot_info->our_robot.y - green_in_y, 2));
-
-        	// 如果距离小于某个阈值（比如 5.0），则停顿 2 秒
-        	const double ARRIVAL_THRESHOLD = 5.0;
-        	if (distance_to_green < ARRIVAL_THRESHOLD)
+            if (path_4.empty())
             {
-            	RCLCPP_INFO(get_logger(), "Arrived at the green area, pausing for 2 seconds...");
-            	rclcpp::sleep_for(std::chrono::seconds(2));  // 停顿 2 秒
-            	RCLCPP_INFO(get_logger(), "Resuming after 2 seconds...");
-        	}
+                RCLCPP_INFO(get_logger(), "password area not found");
+                double green_in_x = m_area.green_in.x;
+                double green_in_y = m_area.green_in.y;
+                algorithm::Path path_2 = algorithm::a_star(
+            		this->m_map,
+            		robot_info->our_robot.x,
+            		robot_info->our_robot.y,
+            		green_in_x,
+            		green_in_y
+                );
+
+                if (path_2.empty())
+                {
+                  	double purple_in_x = m_area.purple_in.x;
+                	double purple_in_y = m_area.purple_in.y;
+                	algorithm::Path path_2 = algorithm::a_star(
+            			this->m_map,
+            			robot_info->our_robot.x,
+            			robot_info->our_robot.y,
+            			purple_in_x,
+            			purple_in_y
+                	);
+
+                    std::tie(pose.x, pose.y) = path_2[1];
+            		RCLCPP_INFO(get_logger(), "pathx_2:%d, pathy_2:%d", path_2[1].first, path_2[1].second);
+            		pose.x -= robot_info->our_robot.x;
+            		pose.y -= robot_info->our_robot.y;
+            		pose.x /= 16;
+            		pose.y /= 16;
+            		pose.theta = std::atan2(purple_in_y - robot_info->our_robot.y, purple_in_x - robot_info->our_robot.x);// 计算自己相对于入口的角度
+            		RCLCPP_INFO(get_logger(), "posex:%lf, posey:%lf theta:%lf", pose.x, pose.y, pose.theta);
+					m_our_pose_publisher->publish(pose);// 发布新的姿态信息
+             		// 检查是否到达绿色区域（距离小于某个阈值）
+        			double distance_to_green = std::sqrt(std::pow(robot_info->our_robot.x - purple_in_x, 2) + std::pow(robot_info->our_robot.y - purple_in_y, 2));
+
+        			// 如果距离小于某个阈值（比如 5.0），则停顿 2 秒
+        			const double ARRIVAL_THRESHOLD = 5.0;
+        			if (distance_to_green < ARRIVAL_THRESHOLD)
+            		{
+            			RCLCPP_INFO(get_logger(), "Arrived at the green area, pausing for 2 seconds...");
+            			rclcpp::sleep_for(std::chrono::seconds(2));  // 停顿 2 秒
+            			RCLCPP_INFO(get_logger(), "Resuming after 2 seconds...");
+
+        			}
+
+                }
+                else
+                {
+                	std::tie(pose.x, pose.y) = path_2[1];
+            		RCLCPP_INFO(get_logger(), "pathx_2:%d, pathy_2:%d", path_2[1].first, path_2[1].second);
+            		pose.x -= robot_info->our_robot.x;
+            		pose.y -= robot_info->our_robot.y;
+            		pose.x /= 16;
+            		pose.y /= 16;
+            		pose.theta = std::atan2(green_in_y - robot_info->our_robot.y, green_in_x - robot_info->our_robot.x);// 计算自己相对于入口的角度
+            		RCLCPP_INFO(get_logger(), "posex:%lf, posey:%lf theta:%lf", pose.x, pose.y, pose.theta);
+					m_our_pose_publisher->publish(pose);// 发布新的姿态信息
+             		// 检查是否到达绿色区域（距离小于某个阈值）
+        			double distance_to_green = std::sqrt(std::pow(robot_info->our_robot.x - green_in_x, 2) + std::pow(robot_info->our_robot.y - green_in_y, 2));
+
+        			// 如果距离小于某个阈值（比如 5.0），则停顿 2 秒
+        			const double ARRIVAL_THRESHOLD = 5.0;
+        			if (distance_to_green < ARRIVAL_THRESHOLD)
+            		{
+            			RCLCPP_INFO(get_logger(), "Arrived at the green area, pausing for 2 seconds...");
+            			rclcpp::sleep_for(std::chrono::seconds(2));  // 停顿 2 秒
+            			RCLCPP_INFO(get_logger(), "Resuming after 2 seconds...");
+
+        			}
+                }
+
+            }
+            else
+            {
+                RCLCPP_INFO(get_logger(), "password area  found");
+                std::tie(pose.x, pose.y) = path_4[1];
+            	RCLCPP_INFO(get_logger(), "pathx_4:%d, pathy_4:%d", path_4[1].first, path_4[1].second);
+            	pose.x -= robot_info->our_robot.x;
+            	pose.y -= robot_info->our_robot.y;
+            	pose.x /= 16;
+            	pose.y /= 16;
+            	pose.theta = std::atan2(password_y - robot_info->our_robot.y, password_x - robot_info->our_robot.x);// 计算自己相对于密码发射区的角度
+            	RCLCPP_INFO(get_logger(), "posex:%lf, posey:%lf theta:%lf", pose.x, pose.y, pose.theta);
+				m_our_pose_publisher->publish(pose);// 发布新的姿态信息
+             	// 检查是否到达发射区区域（距离小于某个阈值）
+        		double distance_to_password = std::sqrt(std::pow(robot_info->our_robot.x - password_x, 2) + std::pow(robot_info->our_robot.y - password_y, 2));
+
+
+        		if (distance_to_password < 1.0)
+            	{
+            		RCLCPP_INFO(get_logger(), "Arrived at the green area, pausing for 2 seconds...");
+            		rclcpp::sleep_for(std::chrono::seconds(2));  // 停顿 2 秒
+            		RCLCPP_INFO(get_logger(), "Resuming after 2 seconds...");
+        		}
+            }
+
+
+
+
+
+
+
+
         }
-        else if(enemy_count == 2)
+        else if(enemy_count != 0)
         {
         	std::sort(robot_info->enemy.begin(), robot_info->enemy.end(), [&robot_info](const info_interfaces::msg::Point& a, const info_interfaces::msg::Point& b)
             	{return algorithm::manhattan_distance(robot_info->our_robot.x, robot_info->our_robot.y, a.x, a.y) < algorithm::manhattan_distance(robot_info->our_robot.x, robot_info->our_robot.y, b.x, b.y);});
@@ -166,7 +250,7 @@ void navigation::Node::robot_navigation_cbfn(const info_interfaces::msg::Robot::
 
 
 
-        	if (path.size() >= 2 && number >5)
+        	if (path.size() >= 2 && number >4)
         	{
           		RCLCPP_INFO(get_logger(), "begin trace");
             	RCLCPP_INFO(get_logger(), "The value of number is: %f", number);
@@ -211,7 +295,7 @@ void navigation::Node::robot_navigation_cbfn(const info_interfaces::msg::Robot::
             	}
         	}
 
-        	else if (number <= 5)
+        	else if (number <= 4)
         	{
             	std::tie(pose.x, pose.y) = path_1[1];
             	RCLCPP_INFO(get_logger(), "path_1x:%d, path_1y:%d", path_1[1].first, path_1[1].second);
@@ -220,26 +304,27 @@ void navigation::Node::robot_navigation_cbfn(const info_interfaces::msg::Robot::
             	pose.x /= 16;
             	pose.y /= 16;
             	pose.theta = std::atan2(m_recover_y - robot_y, m_recover_x - robot_x);// 计算自己相对于补给区的角度
-            	//计算自己相对于补给区的距离
-            	double distance_1 = std::sqrt(std::pow(robot_x - m_recover_x, 2) + std::pow(robot_y - m_recover_y, 2));
-				RCLCPP_INFO(get_logger(), "The value of number is: %f", number);
-            	if (distance_1 <= 2.0)
-            	{
-            	  	number += 15.0;
-            	}
-            	RCLCPP_INFO(get_logger(), "posex:%lf, posey:%lf theta:%lf", pose.x, pose.y, pose.theta);
-            	m_our_pose_publisher->publish(pose);// 发布新的姿态信息
+
                 // 检查是否到达补给区域（距离小于某个阈值）
         		double distance_to_recover = std::sqrt(std::pow(robot_info->our_robot.x - m_recover_x, 2) + std::pow(robot_info->our_robot.y - m_recover_y, 2));
 
-        		// 如果距离小于某个阈值（比如 5.0），则停顿 5 秒
-        		const double ARRIVAL_THRESHOLD_1 = 5.0;
+        		// 如果距离小于某个阈值（比如 2.0），则停顿 5 秒
+        		const double ARRIVAL_THRESHOLD_1 = 1.0;
         		if (distance_to_recover< ARRIVAL_THRESHOLD_1)
             	{
             		RCLCPP_INFO(get_logger(), "Arrived at the recover area, pausing for 5 seconds...");
             		rclcpp::sleep_for(std::chrono::seconds(5));  // 停顿 5 秒
             		RCLCPP_INFO(get_logger(), "Resuming after 5 seconds...");
         		}
+                //计算自己相对于补给区的距离
+            	double distance_1 = std::sqrt(std::pow(robot_x - m_recover_x, 2) + std::pow(robot_y - m_recover_y, 2));
+				RCLCPP_INFO(get_logger(), "The value of number is: %f", number);
+            	if (distance_1 <= 1.0)
+            	{
+            	  	number += 15.0;
+            	}
+            	RCLCPP_INFO(get_logger(), "posex:%lf, posey:%lf theta:%lf", pose.x, pose.y, pose.theta);
+            	m_our_pose_publisher->publish(pose);// 发布新的姿态信息
 			}
         }
     }
@@ -250,12 +335,15 @@ void navigation::Node::password_cbfn(const example_interfaces::msg::Int64::Share
 {
     m_password = *password;
 	RCLCPP_INFO(get_logger(), "password get");
+
+
 }
+
 
 void navigation::Node::password_segment_cbfn(const example_interfaces::msg::Int64::SharedPtr password_segment)
 {
     m_password_segment_vec.push_back(*password_segment);
-
+	 // 将密码片段添加到存储容器
 }
 
 

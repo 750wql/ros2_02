@@ -20,18 +20,24 @@ namespace my_serial {
         uint64_t cmd_id = 0x00; // 命令字
     };
 
-    struct password_send_t {
+    // 如果尾部有多个字段
+    struct Tail {
+        uint64_t crc16 = FRAME_TAIL; // 校验
+    };
+
+
+    struct password_send_t
+    {
         int64_t password1 = 0; // 密码片段1
         int64_t password2 = 0; // 密码片段2
     };
+
 
     struct password_receive_t {
         int64_t password = 0; // 密码
     };
 
-    struct Tail {
-        uint64_t crc16 = FRAME_TAIL; // 校验
-    };
+
 
     class MySerial
         :public serial::Serial<Head, Tail>
