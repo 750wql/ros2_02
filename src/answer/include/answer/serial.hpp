@@ -24,7 +24,7 @@ namespace serial {
     public:
         Serial() = delete;
         Serial(const std::string& port_path, speed_t baud_rate, bool is_big_endian = true)
-            :m_port_path(port_path), m_baud_rate(baud_rate), m_is_big_endian(is_big_endian)
+            :m_port_path(port_path), m_is_big_endian(is_big_endian), m_baud_rate(baud_rate)
         {
             m_fd = open(m_port_path.c_str(), O_RDWR | O_NOCTTY | O_NDELAY);
             if (m_fd < 0) {
@@ -35,7 +35,7 @@ namespace serial {
             else {
                 m_is_open = true;
                 fcntl(m_fd, F_SETFL, 0);
-                if (!set_port_config(std::bind(default_port_config, this, std::placeholders::_1))) {
+                if (!set_port_config(std::bind(&Serial<_Head, _Tail>::default_port_config, this, std::placeholders::_1))) {
                     std::cerr << "fail to init port " << m_port_path << " 's config\n";
                     m_is_open = false;
                     close(m_fd);
@@ -83,7 +83,7 @@ namespace serial {
 
             ssize_t bytes_written = write(m_fd, buffer, write_length);
 
-            delete buffer;
+            delete[] buffer;
 
             if (bytes_written < 0) {
                 std::cerr << "fail to write!\n";
@@ -108,7 +108,7 @@ namespace serial {
                 return false;
             }
             if (nullptr != data) {
-                delete data;
+                delete[] reinterpret_cast<char*>(data);  // 删除已有的动态分配的内存
                 data = nullptr;
             }
 
@@ -131,11 +131,11 @@ namespace serial {
             data = new char[data_length];
 
             ssize_t data_read_length = read(m_fd, data, data_length);
-            if (data_length != data_read_length) {
+            if (static_cast<size_t>(data_read_length) != data_length) {
                 std::cerr << "fail to read data!";
 
                 // 读取数据失败要及时释放内存
-                delete data;
+                delete[] reinterpret_cast<char*>(data);  // 使用 delete[] 释放内存
                 data = nullptr;
 
                 data_length = 0;
@@ -149,7 +149,7 @@ namespace serial {
                 std::cerr << "fail to read tail!";
 
                 // 读取数据失败要及时释放内存
-                delete data;
+                delete[] reinterpret_cast<char*>(data);  // 使用 delete[] 释放内存
                 data = nullptr;
 
                 data_length = 0;
@@ -161,7 +161,7 @@ namespace serial {
                 std::cerr << "tail check is not accessed!";
 
                 // 读取数据失败要及时释放内存
-                delete data;
+                delete[] reinterpret_cast<char*>(data);  // 使用 delete[] 释放内存
                 data = nullptr;
 
                 data_length = 0;
@@ -299,4 +299,4 @@ namespace serial {
 
 }
 
-#endif 
+#endif

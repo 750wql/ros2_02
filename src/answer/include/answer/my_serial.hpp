@@ -54,7 +54,28 @@ namespace my_serial {
             set_set_cmd_id([](Head& head, uint64_t cmd_id) {head.cmd_id = cmd_id;});
         }
     public:
-    private:
+       	// 发送数据
+        void send_data(const std::string& data) {
+            if (this->is_open()) {  // 检查串口是否打开
+                this->write_to_port(data.c_str(), data.size());  // 使用正确的写方法
+            }
+        }
+
+        // 接收数据
+        std::string receive_data() {
+            if (this->is_open()) {  // 检查串口是否打开
+                void* data = nullptr;
+                size_t data_length = 0;
+                bool success = this->read_from_port(data, data_length);  // 使用正确的读方法
+
+                if (success && data != nullptr) {
+                    std::string received_data(reinterpret_cast<char*>(data), data_length);
+                    delete[] reinterpret_cast<char*>(data);  // 清理内存
+                    return received_data;
+                }
+            }
+            return "";
+        }
     };
 }
 

@@ -19,6 +19,7 @@
 #include "info_interfaces/msg/robot.hpp"
 
 #include "constant.hpp"
+#include "my_serial.hpp"
 namespace navigation {
     namespace algorithm {
         struct Node {
@@ -143,6 +144,10 @@ namespace navigation {
         void robot_navigation_cbfn(const info_interfaces::msg::Robot::SharedPtr robot_info);
         void password_cbfn(const example_interfaces::msg::Int64::SharedPtr password);
         void password_segment_cbfn(const example_interfaces::msg::Int64::SharedPtr password_segment);
+        void read_serial_data();
+        void send_data_to_serial(const std::string& data);
+        void send_password_segments();
+        void send_password_to_judger(const example_interfaces::msg::Int64 &password);
     private:
         rclcpp::Publisher<geometry_msgs::msg::Pose2D>::SharedPtr m_our_pose_publisher;
         rclcpp::Publisher<example_interfaces::msg::Bool>::SharedPtr m_shoot_publisher;
@@ -151,15 +156,26 @@ namespace navigation {
         rclcpp::Subscription<info_interfaces::msg::Map>::SharedPtr m_map_subscription;
         rclcpp::Subscription<info_interfaces::msg::Area>::SharedPtr m_area_subscription;
         rclcpp::Subscription<info_interfaces::msg::Robot>::SharedPtr m_robot_subscription;
+        // 发布器
+        rclcpp::Publisher<example_interfaces::msg::Int64>::SharedPtr m_password_publisher;
+
         info_interfaces::msg::Area m_area;
         info_interfaces::msg::Map::SharedPtr m_map;
         example_interfaces::msg::Int64 m_password;
         std::vector<example_interfaces::msg::Int64> m_password_segment_vec;
         // 其他成员变量
+        example_interfaces::msg::Int64 first_segment;
+        example_interfaces::msg::Int64 second_segment;
+        example_interfaces::msg::Int64 password_final;
         int m_count;
         uint32_t m_last_x;
         uint32_t m_last_y;
         const int m_dir[4][2]{ {-1,-1},{1,-1},{1,1},{-1,1} };
+       	std::string m_port_path; // 串口路径
+        speed_t m_baud_rate;     // 波特率
+		my_serial::MySerial m_my_serial;
+		// 在 Node 类中添加一个状态标志
+		bool password_sent = false;
     };
 }
 
