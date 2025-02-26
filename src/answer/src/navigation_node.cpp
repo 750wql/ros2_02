@@ -4,7 +4,7 @@
 #include "navigation_node.hpp"
 
 navigation::Node::Node(const std::string& name)
-    :rclcpp::Node(name), m_port_path("/dev/pts/3"), m_baud_rate(B115200), // 初始化串口路径和波特率
+    :rclcpp::Node(name), m_port_path("/dev/pts/2"), m_baud_rate(B115200), // 初始化串口路径和波特率
       m_my_serial(m_port_path, m_baud_rate)  // 使用构造函数初始化 m_my_serial
 {
 
@@ -231,21 +231,28 @@ void navigation::Node::robot_navigation_cbfn(const info_interfaces::msg::Robot::
 					std::cout << "Second segment: " << second_segment.data << std::endl;
 					send_password_segments();
     			}
-                RCLCPP_INFO(get_logger(), "password area  found");
-                std::tie(pose.x, pose.y) = path_4[1];
-            	RCLCPP_INFO(get_logger(), "pathx_4:%d, pathy_4:%d", path_4[1].first, path_4[1].second);
-            	pose.x -= robot_info->our_robot.x;
-            	pose.y -= robot_info->our_robot.y;
-            	pose.x /= 16;
-            	pose.y /= 16;
-            	pose.theta = std::atan2(password_y - robot_info->our_robot.y, password_x - robot_info->our_robot.x);// 计算自己相对于密码发射区的角度
-            	RCLCPP_INFO(get_logger(), "posex:%lf, posey:%lf theta:%lf", pose.x, pose.y, pose.theta);
-				m_our_pose_publisher->publish(pose);// 发布新的姿态信息
-             	// 检查是否到达发射区区域（距离小于某个阈值）
+
+				if(password_sent == false)
+                {
+                    RCLCPP_INFO(get_logger(), "password: %ld", m_password.data);
+
+                	RCLCPP_INFO(get_logger(), "password area  found");
+                	std::tie(pose.x, pose.y) = path_4[1];
+            		RCLCPP_INFO(get_logger(), "pathx_4:%d, pathy_4:%d", path_4[1].first, path_4[1].second);
+            		pose.x -= robot_info->our_robot.x;
+            		pose.y -= robot_info->our_robot.y;
+            		pose.x /= 16;
+            		pose.y /= 16;
+            		pose.theta = std::atan2(password_y - robot_info->our_robot.y, password_x - robot_info->our_robot.x);// 计算自己相对于密码发射区的角度
+            		RCLCPP_INFO(get_logger(), "posex:%lf, posey:%lf theta:%lf", pose.x, pose.y, pose.theta);
+					m_our_pose_publisher->publish(pose);// 发布新的姿态信息
+
+                }
+				// 检查是否到达发射区区域（距离小于某个阈值）
         		double distance_to_password = std::sqrt(std::pow(robot_info->our_robot.x - password_x, 2) + std::pow(robot_info->our_robot.y - password_y, 2));
 
 
-        		if (distance_to_password < 5.0 && password_sent != true)
+        		if (distance_to_password < 5.0 )
             	{
             		RCLCPP_INFO(get_logger(), "Arrived at the password send area, pausing for 2 seconds...");
 
@@ -258,27 +265,28 @@ void navigation::Node::robot_navigation_cbfn(const info_interfaces::msg::Robot::
                     RCLCPP_INFO(get_logger(), "TRUE");
         		}
 
-                else if(password_sent == true)
+                if(password_sent == true)
                 {
-                  	double purple_out_x = m_area.purple_out.x;
-                	double purple_out_y = m_area.purple_out.y;
+                  	RCLCPP_INFO(get_logger(), "OUT");
+                  	double purple_in_x = m_area.purple_in.x;
+                	double purple_in_y = m_area.purple_in.y;
                 	algorithm::Path path_2 = algorithm::a_star(
             			this->m_map,
             			robot_info->our_robot.x,
             			robot_info->our_robot.y,
-            			purple_out_x,
-            			purple_out_y
+            			purple_in_x,
+            			purple_in_y
                 	);
                     if(path_2.empty())
                     {
-                      	double green_out_x = m_area.green_out.x;
-                		double green_out_y = m_area.green_out.y;
+                      	double green_in_x = m_area.green_in.x;
+                		double green_in_y = m_area.green_in.y;
                 		algorithm::Path path_3 = algorithm::a_star(
             				this->m_map,
             				robot_info->our_robot.x,
             				robot_info->our_robot.y,
-            				green_out_x,
-            				green_out_y
+            				green_in_x,
+            				green_in_y
                 		);
 
                     	std::tie(pose.x, pose.y) = path_3[1];
@@ -287,11 +295,11 @@ void navigation::Node::robot_navigation_cbfn(const info_interfaces::msg::Robot::
             			pose.y -= robot_info->our_robot.y;
             			pose.x /= 16;
             			pose.y /= 16;
-            			pose.theta = std::atan2(green_out_y - robot_info->our_robot.y, green_out_x - robot_info->our_robot.x);// 计算自己相对于入口的角度
+            			pose.theta = std::atan2(green_in_y - robot_info->our_robot.y, green_in_x - robot_info->our_robot.x);// 计算自己相对于入口的角度
             			RCLCPP_INFO(get_logger(), "posex:%lf, posey:%lf theta:%lf", pose.x, pose.y, pose.theta);
 						m_our_pose_publisher->publish(pose);// 发布新的姿态信息
              			// 检查是否到达紫色区域（距离小于某个阈值）
-        				double distance_to_green = std::sqrt(std::pow(robot_info->our_robot.x - green_out_x, 2) + std::pow(robot_info->our_robot.y - green_out_y, 2));
+        				double distance_to_green = std::sqrt(std::pow(robot_info->our_robot.x - green_in_x, 2) + std::pow(robot_info->our_robot.y - green_in_y, 2));
 
         				// 如果距离小于某个阈值（比如 5.0），则停顿 2 秒
         				const double ARRIVAL_THRESHOLD = 5.0;
@@ -310,11 +318,11 @@ void navigation::Node::robot_navigation_cbfn(const info_interfaces::msg::Robot::
             		pose.y -= robot_info->our_robot.y;
             		pose.x /= 16;
             		pose.y /= 16;
-            		pose.theta = std::atan2(purple_out_y - robot_info->our_robot.y, purple_out_x - robot_info->our_robot.x);// 计算自己相对于入口的角度
+            		pose.theta = std::atan2(purple_in_y - robot_info->our_robot.y, purple_in_x - robot_info->our_robot.x);// 计算自己相对于入口的角度
             		RCLCPP_INFO(get_logger(), "posex:%lf, posey:%lf theta:%lf", pose.x, pose.y, pose.theta);
 					m_our_pose_publisher->publish(pose);// 发布新的姿态信息
              		// 检查是否到达绿色区域（距离小于某个阈值）
-        			double distance_to_purple = std::sqrt(std::pow(robot_info->our_robot.x - purple_out_x, 2) + std::pow(robot_info->our_robot.y - purple_out_y, 2));
+        			double distance_to_purple = std::sqrt(std::pow(robot_info->our_robot.x - purple_in_x, 2) + std::pow(robot_info->our_robot.y - purple_in_y, 2));
 
         			// 如果距离小于某个阈值（比如 5.0），则停顿 2 秒
         			const double ARRIVAL_THRESHOLD = 5.0;
@@ -494,7 +502,7 @@ void navigation::Node::password_segment_cbfn(const example_interfaces::msg::Int6
     }
 }
 
-void navigation::Node::read_serial_data()
+void navigation::Node::read_serial_data()//接收密码
 {
     std::string data = m_my_serial.receive_data();  // 接收串口数据
 
@@ -506,13 +514,12 @@ void navigation::Node::read_serial_data()
             // 使用 std::stoll 将字符串转换为 long long int (int64_t)
             int64_t int_data = std::stoll(data);
 
-            // 创建一个 Int64 消息并赋值
-            example_interfaces::msg::Int64 msg;
-            msg.data = int_data;
+
+            m_password.data = int_data;
 
             // 你可以在这里进一步处理这个消息
             // 比如发布消息、存储数据等等
-            RCLCPP_INFO(this->get_logger(), "Converted data: %ld", msg.data);
+            RCLCPP_INFO(this->get_logger(), "Converted data: %ld", m_password.data);
 
             // 如果需要发布消息，可以创建发布者并发布
             // m_int64_publisher->publish(msg);
