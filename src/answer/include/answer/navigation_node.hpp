@@ -146,7 +146,7 @@ namespace navigation {
         void password_segment_cbfn(const example_interfaces::msg::Int64::SharedPtr password_segment);
         void read_serial_data();
         void send_data_to_serial(const std::string& data);
-        void send_password_segments();
+        void send_password_segments(const example_interfaces::msg::Int64& combined_password);
         void send_password_to_judger(const example_interfaces::msg::Int64 &password);
     private:
         rclcpp::Publisher<geometry_msgs::msg::Pose2D>::SharedPtr m_our_pose_publisher;
@@ -176,6 +176,10 @@ namespace navigation {
 		my_serial::MySerial m_my_serial;
 		// 在 Node 类中添加一个状态标志
 		bool password_sent = false;
+         // 定义一个成员变量来跟踪是否需要暂停
+		bool need_pause = false;
+		rclcpp::Time pause_time;
+
     };
 }
 
